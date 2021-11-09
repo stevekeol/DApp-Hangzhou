@@ -1,11 +1,11 @@
 Arguments: 
-  /snap/node/5485/bin/node /snap/node/5485/bin/yarn.js
+  /usr/bin/node /usr/local/bin/yarn add body-parsers
 
 PATH: 
-  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/stevekeol/Android/Sdk/tools:/home/stevekeol/Android/Sdk/tools/bin:/home/stevekeol/Android/Sdk/platform-tools:/home/stevekeol/Android/Sdk/emu
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 
 Yarn version: 
-  1.22.15
+  1.22.17
 
 Node version: 
   14.18.1
@@ -14,8 +14,14 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://github.com/tunnckocore/body-parsers: ETIMEDOUT
-      at Timeout._onTimeout (/snap/node/5485/lib/cli.js:141545:19)
+  Error: https://github.com/tunnckocore/body-parsers: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141510:19)
+      at Object.onceWrapper (events.js:519:28)
+      at ClientRequest.emit (events.js:400:28)
+      at TLSSocket.emitRequestTimeout (_http_client.js:790:9)
+      at Object.onceWrapper (events.js:519:28)
+      at TLSSocket.emit (events.js:412:35)
+      at TLSSocket.Socket._onTimeout (net.js:495:8)
       at listOnTimeout (internal/timers.js:557:17)
       at processTimers (internal/timers.js:500:7)
 

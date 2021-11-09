@@ -50,6 +50,7 @@ function getSourcePath (rPath) {
 
 module.exports = {
   entry: {
+    // weweb在什么时候会用到这个名字？
     weweb: getSourcePath('index.js')
   },
   output: {
