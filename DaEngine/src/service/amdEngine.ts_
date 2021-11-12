@@ -20,7 +20,7 @@ interface Imodule {
  */
 declare global {
   interface Window {
-    require: Function,
+    require: () => any,
     define: Function
   }
 }
@@ -91,7 +91,7 @@ const getRequireFun = (pathname: String) => {
       throw new Error('require args must be a string')
     }
     var floderArr = []
-    var folders = (getPathPrefix(pathname) + '/' + path).split('/')
+    var folders: string[] = (getPathPrefix(pathname) + '/' + path).split('/')
     var pathLength = folders.length
     for (var i = 0; i < pathLength; ++i) {
       var folder = folders[i]
@@ -109,11 +109,11 @@ const getRequireFun = (pathname: String) => {
       }
     }
     try {
-      var pathname = floderArr.join('/')
-      if (!/\.js$/.test(pathname)) {
+      var _pathname = floderArr.join('/')
+      if (!/\.js$/.test(_pathname)) {
         pathname += '.js' //@TODO tofixed
       }
-      return require(pathname)
+      return require(_pathname)
     } catch (e) {
       throw e
     }

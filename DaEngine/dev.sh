@@ -9,4 +9,4 @@ if [ "$1" != "dev" ]; then
   npm run dev:nowatch
 fi
 
-./bin/weweb -b $app
+./bin/DaEngine -b $app

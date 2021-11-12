@@ -11,14 +11,15 @@
     "dev": "WATCH=true webpack --progress --config webpack.config.js",
     "dev:nowatch": "webpack --progress --config webpack.config.js",
     "dev:tmp": "WATCH=true webpack --progress --config webpack.config.dev.js",
-    "build":
-      "NODE_ENV=production webpack --progress --config webpack.config.js",
+    "build": "NODE_ENV=production webpack --progress --config webpack.config.js",
     "precommit": "lint-staged",
-    "autostart":
-      "nodemon -w demos -w lib/template -d 1.5 -e js,json,wxss,wxml --exec 'npm run start'"
+    "autostart": "nodemon -w demos -w lib/template -d 1.5 -e js,json,wxss,wxml --exec 'npm run start'"
   },
   "lint-staged": {
-    "{*.js,bin/DaEngine,*.json}": ["prettier-standard", "git add"]
+    "{*.js,bin/DaEngine,*.json}": [
+      "prettier-standard",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -64,6 +65,7 @@
     "wxss-transpiler": "^1.0.6"
   },
   "devDependencies": {
+    "@types/node": "^16.11.2",
     "actionsheet": "^0.1.2",
     "autoscale-canvas": "0.0.3",
     "babel-loader": "^7.1.4",
@@ -118,10 +120,12 @@
     "source-map": "^0.7.3",
     "style-loader": "^0.21.0",
     "throttleit": "^1.0.0",
-    "webpack": "^3.12.0",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.4.4",
+    "webpack": "^5.64.0",
     "webpack-bundle-analyzer": "^2.13.1",
-    "whatwg-fetch": "^2.0.4",
-    "@types/node": "^16.11.2"
+    "webpack-cli": "^4.9.1",
+    "whatwg-fetch": "^2.0.4"
   },
   "browser": {
     "emitter": "component-emitter",
