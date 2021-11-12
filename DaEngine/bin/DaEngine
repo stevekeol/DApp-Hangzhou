@@ -44,13 +44,7 @@ program
 
 program.parse(process.argv)
 
-/**
- * log 函数，只转换小程序时不输出
- *
- * @param {any} msg
- * @param {any} allow
- */
-const printLog = function (msg, allow) {
+const printLog = function(msg, allow) {
   if (!program.transform || allow) {
     console.log(msg)
   }
@@ -59,7 +53,7 @@ const printLog = function (msg, allow) {
 // 更新检查方法
 const notifier = new UpdateNotifier({
   pkg: json,
-  callback: function (err, result) {
+  callback: function(err, result) {
     if (err) return
     if (semCmp(result.latest, result.current) > 0) {
       const message =
@@ -84,17 +78,17 @@ const notifier = new UpdateNotifier({
   }
 })
 
-// 打开更新历史
-if (program.list) {
-  open('https://github.com/wdfe/weweb/releases')
-  process.exit()
-}
+// // 打开更新历史
+// if (program.list) {
+//   open('https://github.com/wdfe/weweb/releases')
+//   process.exit()
+// }
 
 let tmpFolderName
 let curPath = process.cwd()
 
 // 校验项目文件（指定的文件是否存在，并进入对应项目的目录作为工作目录）
-function checkProject () {
+function checkProject() {
   let folder = program.args[0]
   if (folder) {
     let stats
@@ -152,7 +146,7 @@ let distPath = path.resolve(curPath, program.dist || './wewebTmp/dist')
 /**
  *   记录构建时间
  */
-function printRunTime () {
+function printRunTime() {
   const endTime = new Date()
   console.log(
     chalk.yellow(
@@ -165,18 +159,19 @@ function printRunTime () {
  * 启动服务器
  *
  */
-function bootWebServer () {
+function bootWebServer() {
   // 此处是利用koa开启本地服务器，那么在移动端怎么办？（开发模式：其实自然就有http-server；产品模式：已经是内存中一个纯粹的文件夹形式。SO？？？）
   // 其实移动端不必过分考虑，因为此时已经不再是开发模式，仅仅是产品模式。
   let server = require('../lib/server')(distPath)
-  let startPort = 2000
+  // 该端口号：懂的都懂
+  let startPort = 9527
 
-  getPort(function (port) {
+  getPort(function(port) {
+    // Macbook Platform
     if (os.platform() === 'darwin' && program.open) {
-      exec('osascript chrome.scpt ' + port, { cwd: __dirname }, function () {})
+      exec('osascript chrome.scpt ' + port, { cwd: __dirname }, function() {})
     }
-    server.listen(port, function () {
-      // printLog('listening on port ' + port)
+    server.listen(port, function() {
       const openMsg = `Opening it on: http://localhost:${port}`
       let msg =
         '\n' +
@@ -188,27 +183,23 @@ function bootWebServer () {
           borderStyle: 'round'
         })
       printRunTime()
-      // notify.notify({
-      //   'title': 'Build Done',
-      //   'message': new Date()
-      // });
       printLog(msg)
       if (program.open) open('http://localhost:' + port)
     })
   })
 
-  function getPort (cb) {
+  function getPort(cb) {
     if (program.port) return cb(program.port)
     let port = startPort
 
     let server = net.createServer()
-    server.listen(port, function () {
-      server.once('close', function () {
+    server.listen(port, function() {
+      server.once('close', function() {
         cb(port)
       })
       server.close()
     })
-    server.on('error', function () {
+    server.on('error', function() {
       startPort += 1
       getPort(cb)
     })
@@ -220,8 +211,8 @@ function bootWebServer () {
  * 创建临时文件夹，将业务代码获取后集成进入模板代码中，并将所有页面各自编译成一个js文件
  * （这些可以在开启本地http server的chrome中的Sources中查看各个文件的构成和内容）
  */
-function build () {
-  let execBuild = async function (err, out) {
+function build() {
+  let execBuild = async function(err, out) {
     // printLog(out)
     err && printLog(err)
     util.mkdirsSync(distPath)
@@ -292,7 +283,7 @@ function build () {
 
     // 将每个页面合成一个js文件（html,css,js等）
     await Promise.all(
-      pages.map(async function (path) {
+      pages.map(async function(path) {
         let fullpath = path.replace(/^(\/|\.\/)/, '') // fullpath即包含了文件名
         let paths = fullpath.split('/')
         let file = paths.pop() // 根据path取出文件名
@@ -365,7 +356,7 @@ function build () {
   }
 }
 
-process.on('uncaughtException', function (e) {
+process.on('uncaughtException', function(e) {
   printLog(chalk.red('发生了未知错误'))
   console.error(e.stack)
 })
