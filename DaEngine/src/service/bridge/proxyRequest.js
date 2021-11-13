@@ -46,18 +46,18 @@ var request = function (event, params, callback) {
 
   if (
     __wxConfig__ &&
-    __wxConfig__.weweb &&
-    (__wxConfig__.weweb.requestProxy ||
-      __wxConfig__.weweb.requestType == 'ajax')
+    __wxConfig__.DaEngine &&
+    (__wxConfig__.DaEngine.requestProxy ||
+      __wxConfig__.DaEngine.requestType == 'ajax')
   ) {
     // 配置了 reqProxy， 使用代理来请求
-    if (__wxConfig__.weweb.requestProxy) {
-      url = __wxConfig__.weweb.requestProxy
+    if (__wxConfig__.DaEngine.requestProxy) {
+      url = __wxConfig__.DaEngine.requestProxy
     }
 
     xhr.open(method, url, true)
 
-    if (__wxConfig__.weweb.requestType == 'ajax') {
+    if (__wxConfig__.DaEngine.requestType == 'ajax') {
       xhr.withCredentials = true
     }
 
@@ -85,7 +85,7 @@ var request = function (event, params, callback) {
         })
     }
 
-    if (__wxConfig__.weweb.requestType != 'ajax') {
+    if (__wxConfig__.DaEngine.requestType != 'ajax') {
       xhr.setRequestHeader('X-Remote', params.url)
       xhr.setRequestHeader(
         'Cache-Control',

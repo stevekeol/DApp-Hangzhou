@@ -80,7 +80,7 @@ const notifier = new UpdateNotifier({
 
 // // 打开更新历史
 // if (program.list) {
-//   open('https://github.com/wdfe/weweb/releases')
+//   open('https://github.com/stevekeol/DaEngine/releases')
 //   process.exit()
 // }
 
@@ -247,7 +247,7 @@ function build() {
     await core.getIndex().then(content =>
       /*
            if(program.transform){
-           content = content.replace('let __wxConfig__ = {"weweb":{','let __wxConfig__ = {"weweb":{ "requestProxy":"/remoteProxy",')
+           content = content.replace('let __wxConfig__ = {"DaEngine":{','let __wxConfig__ = {"DaEngine":{ "requestProxy":"/remoteProxy",')
            }
            */
       util.createFilePromise(distPath, 'index.html', content, program.transform)

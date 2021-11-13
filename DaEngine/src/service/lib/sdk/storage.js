@@ -3,7 +3,7 @@ import Emitter from 'emitter'
 // 5MB
 const LIMIT_SIZE = 5 * 1024
 
-let directory = '__weweb__storage__'
+let directory = '__DaEngine__storage__'
 
 function currentSize () {
   var total = 0

@@ -611,8 +611,8 @@ export function uploadFile (data) {
   let reqUrl =
     (args.url.indexOf('http') === 0 &&
       args.url.indexOf(location.host) === -1 &&
-      __wxConfig__.weweb &&
-      (__wxConfig__.weweb.requestProxy || '/remoteProxy')) ||
+      __wxConfig__.DaEngine &&
+      (__wxConfig__.DaEngine.requestProxy || '/remoteProxy')) ||
     args.url
   xhr.open('POST', reqUrl)
   xhr.onload = function () {
@@ -648,8 +648,8 @@ export function downloadFile (data) {
   let reqUrl =
     (args.url.indexOf('http') === 0 &&
       args.url.indexOf(location.host) === -1 &&
-      __wxConfig__.weweb &&
-      (__wxConfig__.weweb.requestProxy || '/remoteProxy') +
+      __wxConfig__.DaEngine &&
+      (__wxConfig__.DaEngine.requestProxy || '/remoteProxy') +
         '?' +
         encodeURIComponent(args.url)) ||
     args.url
@@ -813,7 +813,7 @@ export function showPickerView (args) {
 export function insertHTMLWebView (args) {
   createWebview(
     'webview_site_' + args.htmlId,
-    document.querySelector(`#weweb-view-${window.__webviewId__}`)
+    document.querySelector(`#DaEngine-view-${window.__webviewId__}`)
   )
   WeixinJSBridge.subscribeHandler('insertHTMLWebView', {
     errMsg: 'insertHTMLWebView:ok'

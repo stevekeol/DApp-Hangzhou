@@ -111,7 +111,7 @@
     "uploadFile": 10000,
     "downloadFile": 10000
   },
-  "weweb": {
+  "DaEngine": {
     "nomap": false,
     "requestProxy": "/remoteProxy"
   },

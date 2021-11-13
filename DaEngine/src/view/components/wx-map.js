@@ -1,7 +1,7 @@
 // add map sdk
 // export default  !(function () {
 //     window.addEventListener('DOMContentLoaded', function () {
-//         if (window.__wxConfig__.weweb && window.__wxConfig__.weweb.nomap) return
+//         if (window.__wxConfig__.DaEngine && window.__wxConfig__.DaEngine.nomap) return
 //         var script = document.createElement('script')
 //         script.async = true
 //         script.type = 'text/javascript'

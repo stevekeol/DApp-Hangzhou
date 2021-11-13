@@ -25,7 +25,7 @@ exports.globJSfiles = function () {
     glob(
       '**/*.js',
       {
-        ignore: ['node_modules/**/*.js', 'heraTmp', 'wewebTmp', 'tmp']
+        ignore: ['node_modules/**/*.js', 'DaEngineTmp', 'tmp']
       },
       function (err, files) {
         if (err) return reject(err)

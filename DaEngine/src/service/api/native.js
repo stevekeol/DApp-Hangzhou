@@ -7,7 +7,7 @@ function systemInfo () {
     windowWidth: window.innerWidth || 0,
     windowHeight: window.innerHeight || 0,
     language: window.navigator.userLanguage || window.navigator.language,
-    platform: 'weweb',
+    platform: 'DaEngine',
     version: '0.0.1'
   }
 }

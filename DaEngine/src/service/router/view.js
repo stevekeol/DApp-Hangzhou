@@ -150,7 +150,7 @@ export default class View extends Emitter {
   resizeWxss () {}
   createPage (id, hidden, parent = document.body) {
     let el = document.createElement('div')
-    el.setAttribute('id', 'weweb-view-' + id)
+    el.setAttribute('id', 'DaEngine-view-' + id)
     el.setAttribute('view-id', id)
     el.style.height = '100%'
     if (hidden) {
@@ -166,7 +166,7 @@ export default class View extends Emitter {
     if (!content) return
     /*
      content = content.split('\n').map(function(value){
-     return value==''?value:"#weweb-view-"+self.id+" "+value.replace(/([^\{]+?,)([^\{]+?)/g,"$1#weweb-view-"+self.id+" $2")
+     return value==''?value:"#DaEngine-view-"+self.id+" "+value.replace(/([^\{]+?,)([^\{]+?)/g,"$1#DaEngine-view-"+self.id+" $2")
      }).join('\n');
      */
 

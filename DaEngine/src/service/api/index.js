@@ -857,14 +857,14 @@ var apiObj = {
     )
   },
   login: function (params) {
-    if (__wxConfig__ && __wxConfig__.weweb && __wxConfig__.weweb.loginUrl) {
+    if (__wxConfig__ && __wxConfig__.DaEngine && __wxConfig__.DaEngine.loginUrl) {
       // 引导到自定义的登录页面
-      if (__wxConfig__.weweb.loginUrl.indexOf('/') != 0) {
-        __wxConfig__.weweb.loginUrl = '/' + __wxConfig__.weweb.loginUrl
+      if (__wxConfig__.DaEngine.loginUrl.indexOf('/') != 0) {
+        __wxConfig__.DaEngine.loginUrl = '/' + __wxConfig__.DaEngine.loginUrl
       }
       loginSourceUrl = __curPage__.url
       apiObj.redirectTo({
-        url: __wxConfig__.weweb.loginUrl
+        url: __wxConfig__.DaEngine.loginUrl
       })
     } else {
       bridge.invokeMethod('login', params)

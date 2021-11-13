@@ -71,7 +71,7 @@ function getRoutes () {
   const path = location.hash.replace(/^#!/, '')
   let result = path ? [path] : [root]
   if (sessionStorage) {
-    const routesStr = sessionStorage.getItem('weweb_routes')
+    const routesStr = sessionStorage.getItem('DaEngine_routes')
     if (routesStr) {
       const routes = routesStr.split('|')
       if (routes.indexOf(path) === routes.length - 1) {
@@ -100,7 +100,7 @@ function onRoute () {
     }
   }
   let str = arr.reverse().join('|')
-  sessionStorage.setItem('weweb_routes', str)
+  sessionStorage.setItem('DaEngine_routes', str)
 }
 
 function onBack () {
