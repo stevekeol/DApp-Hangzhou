@@ -13,8 +13,16 @@ const isProd = process.env.NODE_ENV === 'production'
 const isWatched = process.env.WATCH === 'true'
 // const showAnalysis = process.env.ANA === 'true'
 
-// // 将 css 从文本中提取出来，参数为资源存放的位置(此处是lib/template/assets/css/DaEngine.min.css，因为此时的路径是DIST_PATH)
+// 代码优化相关
+const TerserPlugin = require('terser-webpack-plugin')
+
 let plugins = [
+  // fix "process is not defined" error:
+  // (do "npm install process" before running the build)
+  new webpack.ProvidePlugin({
+    process: 'process/browser'
+  }),
+  // 将 css 从文本中提取出来，参数为资源存放的位置(此处是lib/template/assets/css/DaEngine.min.css，因为此时的路径是DIST_PATH)
   new MiniCssExtractPlugin({
     filename: '../css/weweb.min.css'
   })
@@ -32,18 +40,18 @@ if (isProd) {
       }
     }),
     new webpack.optimize.AggressiveMergingPlugin(),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false,
-        drop_debugger: true,
-        dead_code: true,
-        properties: true,
-        evaluate: true
-      },
-      output: {
-        comments: false
-      }
-    }),
+    // new webpack.optimize.UglifyJsPlugin({
+    //   compress: {
+    //     warnings: false,
+    //     drop_debugger: true,
+    //     dead_code: true,
+    //     properties: true,
+    //     evaluate: true
+    //   },
+    //   output: {
+    //     comments: false
+    //   }
+    // }),
     new webpack.optimize.ModuleConcatenationPlugin()
   ])
 }
@@ -57,6 +65,7 @@ function getSourcePath (rPath) {
 }
 
 module.exports = {
+  // mode: 'development',
   mode: 'production',
   entry: {
     DaEngine: getSourcePath('index.ts')
@@ -113,6 +122,10 @@ module.exports = {
     modulesSort: 'size',
     chunksSort: 'size',
     assetsSort: 'size'
+  },
+  optimization: {
+    minimize: false,
+    minimizer: [new TerserPlugin()]
   },
   plugins: plugins
 }
