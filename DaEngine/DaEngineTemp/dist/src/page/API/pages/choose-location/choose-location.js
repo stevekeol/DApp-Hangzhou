@@ -580,7 +580,7 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/foot.wxml');return}
     p_[b]=true
     try{
-      var oIBB = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var oJBB = _m( "image", ["class", 4,"src", 1], e, s, gg);_(oIBB,oJBB);_(r,oIBB);
+      var oHCB = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var oICB = _m( "image", ["class", 4,"src", 1], e, s, gg);_(oHCB,oICB);_(r,oHCB);
     }catch(err){
     p_[b]=false
     throw err
@@ -598,10 +598,10 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/head.wxml');return}
     p_[b]=true
     try{
-      var oNBB = _n("view");_r(oNBB, 'class', 6, e, s, gg);var oOBB = _n("view");_r(oOBB, 'class', 7, e, s, gg);var oPBB = _o(8, e, s, gg);_(oOBB,oPBB);_(oNBB,oOBB);var oQBB = _n("view");_r(oQBB, 'class', 9, e, s, gg);_(oNBB,oQBB);var oRBB = _v();
+      var oMCB = _n("view");_r(oMCB, 'class', 6, e, s, gg);var oNCB = _n("view");_r(oNCB, 'class', 7, e, s, gg);var oOCB = _o(8, e, s, gg);_(oNCB,oOCB);_(oMCB,oNCB);var oPCB = _n("view");_r(oPCB, 'class', 9, e, s, gg);_(oMCB,oPCB);var oQCB = _v();
       if (_o(10, e, s, gg)) {
-        oRBB.wxVkey = 1;var oSBB = _n("view");_r(oSBB, 'class', 11, e, s, gg);var oUBB = _o(10, e, s, gg);_(oSBB,oUBB);_(oRBB, oSBB);
-      } _(oNBB,oRBB);_(r,oNBB);
+        oQCB.wxVkey = 1;var oRCB = _n("view");_r(oRCB, 'class', 11, e, s, gg);var oTCB = _o(10, e, s, gg);_(oRCB,oTCB);_(oQCB, oRCB);
+      } _(oMCB,oQCB);_(r,oMCB);
     }catch(err){
     p_[b]=false
     throw err
@@ -615,25 +615,25 @@ var z = [];
   };
         e_["./page/common/head.wxml"]={f:m1,j:[],i:[],ti:[],ic:[]};d_["./page/API/pages/choose-location/choose-location.wxml"] = {};
   var m2=function(e,s,r,gg){
-    var oXBB = e_["./page/API/pages/choose-location/choose-location.wxml"].i;_ai(oXBB, '../../../common/head.wxml', e_, './page/API/pages/choose-location/choose-location.wxml', 0, 0);_ai(oXBB, '../../../common/foot.wxml', e_, './page/API/pages/choose-location/choose-location.wxml', 0, 0);var oaBB = _n("view");_r(oaBB, 'class', 12, e, s, gg);var obBB = _v();
-       var ocBB = _o(13, e, s, gg);
-       var oeBB = _gd('./page/API/pages/choose-location/choose-location.wxml', ocBB, e_, d_);
-       if (oeBB) {
-         var odBB = _1(14,e,s,gg);
-         oeBB(odBB,odBB,obBB, gg);
-       } else _w(ocBB, './page/API/pages/choose-location/choose-location.wxml', 0, 0);_(oaBB,obBB);var ofBB = _n("view");_r(ofBB, 'class', 15, e, s, gg);var ogBB = _n("view");_r(ogBB, 'class', 16, e, s, gg);var ohBB = _n("view");_r(ohBB, 'class', 17, e, s, gg);var oiBB = _n("text");_r(oiBB, 'class', 18, e, s, gg);var ojBB = _o(19, e, s, gg);_(oiBB,ojBB);_(ohBB,oiBB);var okBB = _v();
+    var oWCB = e_["./page/API/pages/choose-location/choose-location.wxml"].i;_ai(oWCB, '../../../common/head.wxml', e_, './page/API/pages/choose-location/choose-location.wxml', 0, 0);_ai(oWCB, '../../../common/foot.wxml', e_, './page/API/pages/choose-location/choose-location.wxml', 0, 0);var oZCB = _n("view");_r(oZCB, 'class', 12, e, s, gg);var oaCB = _v();
+       var obCB = _o(13, e, s, gg);
+       var odCB = _gd('./page/API/pages/choose-location/choose-location.wxml', obCB, e_, d_);
+       if (odCB) {
+         var ocCB = _1(14,e,s,gg);
+         odCB(ocCB,ocCB,oaCB, gg);
+       } else _w(obCB, './page/API/pages/choose-location/choose-location.wxml', 0, 0);_(oZCB,oaCB);var oeCB = _n("view");_r(oeCB, 'class', 15, e, s, gg);var ofCB = _n("view");_r(ofCB, 'class', 16, e, s, gg);var ogCB = _n("view");_r(ogCB, 'class', 17, e, s, gg);var ohCB = _n("text");_r(ohCB, 'class', 18, e, s, gg);var oiCB = _o(19, e, s, gg);_(ohCB,oiCB);_(ogCB,ohCB);var ojCB = _v();
       if (_o(20, e, s, gg)) {
-        okBB.wxVkey = 1;var onBB = _n("text");_r(onBB, 'class', 21, e, s, gg);var ooBB = _o(22, e, s, gg);_(onBB,ooBB);_(okBB,onBB);
-      } _(ohBB,okBB);var opBB = _v();
+        ojCB.wxVkey = 1;var omCB = _n("text");_r(omCB, 'class', 21, e, s, gg);var onCB = _o(22, e, s, gg);_(omCB,onCB);_(ojCB,omCB);
+      } _(ogCB,ojCB);var ooCB = _v();
       if (_o(23, e, s, gg)) {
-        opBB.wxVkey = 1;var osBB = _n("text");_r(osBB, 'class', 21, e, s, gg);var otBB = _o(24, e, s, gg);_(osBB,otBB);_(opBB,osBB);var ouBB = _n("view");_r(ouBB, 'class', 25, e, s, gg);var ovBB = _n("text");var owBB = _o(26, e, s, gg);_(ovBB,owBB);_(ouBB,ovBB);var oxBB = _n("text");var oyBB = _o(27, e, s, gg);_(oxBB,oyBB);_(ouBB,oxBB);_(opBB,ouBB);
-      } _(ohBB,opBB);_(ogBB,ohBB);var ozBB = _n("view");_r(ozBB, 'class', 28, e, s, gg);var o_BB = _m( "button", ["bindtap", 29,"type", 1], e, s, gg);var oACB = _o(31, e, s, gg);_(o_BB,oACB);_(ozBB,o_BB);var oBCB = _n("button");_r(oBCB, 'bindtap', 32, e, s, gg);var oCCB = _o(33, e, s, gg);_(oBCB,oCCB);_(ozBB,oBCB);_(ogBB,ozBB);_(ofBB,ogBB);_(oaBB,ofBB);var oDCB = _v();
-       var oECB = _o(34, e, s, gg);
-       var oGCB = _gd('./page/API/pages/choose-location/choose-location.wxml', oECB, e_, d_);
-       if (oGCB) {
-         var oFCB = {};
-         oGCB(oFCB,oFCB,oDCB, gg);
-       } else _w(oECB, './page/API/pages/choose-location/choose-location.wxml', 0, 0);_(oaBB,oDCB);_(r,oaBB);oXBB.pop();oXBB.pop();
+        ooCB.wxVkey = 1;var orCB = _n("text");_r(orCB, 'class', 21, e, s, gg);var osCB = _o(24, e, s, gg);_(orCB,osCB);_(ooCB,orCB);var otCB = _n("view");_r(otCB, 'class', 25, e, s, gg);var ouCB = _n("text");var ovCB = _o(26, e, s, gg);_(ouCB,ovCB);_(otCB,ouCB);var owCB = _n("text");var oxCB = _o(27, e, s, gg);_(owCB,oxCB);_(otCB,owCB);_(ooCB,otCB);
+      } _(ogCB,ooCB);_(ofCB,ogCB);var oyCB = _n("view");_r(oyCB, 'class', 28, e, s, gg);var ozCB = _m( "button", ["bindtap", 29,"type", 1], e, s, gg);var o_CB = _o(31, e, s, gg);_(ozCB,o_CB);_(oyCB,ozCB);var oADB = _n("button");_r(oADB, 'bindtap', 32, e, s, gg);var oBDB = _o(33, e, s, gg);_(oADB,oBDB);_(oyCB,oADB);_(ofCB,oyCB);_(oeCB,ofCB);_(oZCB,oeCB);var oCDB = _v();
+       var oDDB = _o(34, e, s, gg);
+       var oFDB = _gd('./page/API/pages/choose-location/choose-location.wxml', oDDB, e_, d_);
+       if (oFDB) {
+         var oEDB = {};
+         oFDB(oEDB,oEDB,oCDB, gg);
+       } else _w(oDDB, './page/API/pages/choose-location/choose-location.wxml', 0, 0);_(oZCB,oCDB);_(r,oZCB);oWCB.pop();oWCB.pop();
     return r;
   };
         e_["./page/API/pages/choose-location/choose-location.wxml"]={f:m2,j:[],i:[],ti:["../../../common/head.wxml","../../../common/foot.wxml"],ic:[]};

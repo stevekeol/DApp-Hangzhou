@@ -580,7 +580,7 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/foot.wxml');return}
     p_[b]=true
     try{
-      var otj = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var ouj = _m( "image", ["class", 4,"src", 1], e, s, gg);_(otj,ouj);_(r,otj);
+      var oik = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var ojk = _m( "image", ["class", 4,"src", 1], e, s, gg);_(oik,ojk);_(r,oik);
     }catch(err){
     p_[b]=false
     throw err
@@ -598,10 +598,10 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/head.wxml');return}
     p_[b]=true
     try{
-      var oyj = _n("view");_r(oyj, 'class', 6, e, s, gg);var ozj = _n("view");_r(ozj, 'class', 7, e, s, gg);var o_j = _o(8, e, s, gg);_(ozj,o_j);_(oyj,ozj);var oAk = _n("view");_r(oAk, 'class', 9, e, s, gg);_(oyj,oAk);var oBk = _v();
+      var onk = _n("view");_r(onk, 'class', 6, e, s, gg);var ook = _n("view");_r(ook, 'class', 7, e, s, gg);var opk = _o(8, e, s, gg);_(ook,opk);_(onk,ook);var oqk = _n("view");_r(oqk, 'class', 9, e, s, gg);_(onk,oqk);var ork = _v();
       if (_o(10, e, s, gg)) {
-        oBk.wxVkey = 1;var oCk = _n("view");_r(oCk, 'class', 11, e, s, gg);var oEk = _o(10, e, s, gg);_(oCk,oEk);_(oBk, oCk);
-      } _(oyj,oBk);_(r,oyj);
+        ork.wxVkey = 1;var osk = _n("view");_r(osk, 'class', 11, e, s, gg);var ouk = _o(10, e, s, gg);_(osk,ouk);_(ork, osk);
+      } _(onk,ork);_(r,onk);
     }catch(err){
     p_[b]=false
     throw err
@@ -615,25 +615,25 @@ var z = [];
   };
         e_["./page/common/head.wxml"]={f:m1,j:[],i:[],ti:[],ic:[]};d_["./page/API/pages/get-network-type/get-network-type.wxml"] = {};
   var m2=function(e,s,r,gg){
-    var oHk = e_["./page/API/pages/get-network-type/get-network-type.wxml"].i;_ai(oHk, '../../../common/head.wxml', e_, './page/API/pages/get-network-type/get-network-type.wxml', 0, 0);_ai(oHk, '../../../common/foot.wxml', e_, './page/API/pages/get-network-type/get-network-type.wxml', 0, 0);var oKk = _n("view");_r(oKk, 'class', 12, e, s, gg);var oLk = _v();
-       var oMk = _o(13, e, s, gg);
-       var oOk = _gd('./page/API/pages/get-network-type/get-network-type.wxml', oMk, e_, d_);
-       if (oOk) {
-         var oNk = _1(14,e,s,gg);
-         oOk(oNk,oNk,oLk, gg);
-       } else _w(oMk, './page/API/pages/get-network-type/get-network-type.wxml', 0, 0);_(oKk,oLk);var oPk = _n("view");_r(oPk, 'class', 15, e, s, gg);var oQk = _n("view");_r(oQk, 'class', 16, e, s, gg);var oRk = _n("view");_r(oRk, 'class', 17, e, s, gg);var oSk = _n("view");_r(oSk, 'class', 18, e, s, gg);var oTk = _o(19, e, s, gg);_(oSk,oTk);_(oRk,oSk);var oUk = _v();
+    var oxk = e_["./page/API/pages/get-network-type/get-network-type.wxml"].i;_ai(oxk, '../../../common/head.wxml', e_, './page/API/pages/get-network-type/get-network-type.wxml', 0, 0);_ai(oxk, '../../../common/foot.wxml', e_, './page/API/pages/get-network-type/get-network-type.wxml', 0, 0);var o_k = _n("view");_r(o_k, 'class', 12, e, s, gg);var oAl = _v();
+       var oBl = _o(13, e, s, gg);
+       var oDl = _gd('./page/API/pages/get-network-type/get-network-type.wxml', oBl, e_, d_);
+       if (oDl) {
+         var oCl = _1(14,e,s,gg);
+         oDl(oCl,oCl,oAl, gg);
+       } else _w(oBl, './page/API/pages/get-network-type/get-network-type.wxml', 0, 0);_(o_k,oAl);var oEl = _n("view");_r(oEl, 'class', 15, e, s, gg);var oFl = _n("view");_r(oFl, 'class', 16, e, s, gg);var oGl = _n("view");_r(oGl, 'class', 17, e, s, gg);var oHl = _n("view");_r(oHl, 'class', 18, e, s, gg);var oIl = _o(19, e, s, gg);_(oHl,oIl);_(oGl,oHl);var oJl = _v();
       if (_o(20, e, s, gg)) {
-        oUk.wxVkey = 1;var oXk = _n("text");_r(oXk, 'class', 21, e, s, gg);var oYk = _o(22, e, s, gg);_(oXk,oYk);_(oUk,oXk);var oZk = _n("text");_r(oZk, 'class', 21, e, s, gg);var oak = _o(23, e, s, gg);_(oZk,oak);_(oUk,oZk);
-      } _(oRk,oUk);var obk = _v();
+        oJl.wxVkey = 1;var oMl = _n("text");_r(oMl, 'class', 21, e, s, gg);var oNl = _o(22, e, s, gg);_(oMl,oNl);_(oJl,oMl);var oOl = _n("text");_r(oOl, 'class', 21, e, s, gg);var oPl = _o(23, e, s, gg);_(oOl,oPl);_(oJl,oOl);
+      } _(oGl,oJl);var oQl = _v();
       if (_o(24, e, s, gg)) {
-        obk.wxVkey = 1;var oek = _n("text");_r(oek, 'class', 25, e, s, gg);var ofk = _o(26, e, s, gg);_(oek,ofk);_(obk,oek);
-      } _(oRk,obk);_(oQk,oRk);var ogk = _n("view");_r(ogk, 'class', 27, e, s, gg);var ohk = _m( "button", ["bindtap", 28,"type", 1], e, s, gg);var oik = _o(30, e, s, gg);_(ohk,oik);_(ogk,ohk);var ojk = _n("button");_r(ojk, 'bindtap', 31, e, s, gg);var okk = _o(32, e, s, gg);_(ojk,okk);_(ogk,ojk);_(oQk,ogk);_(oPk,oQk);_(oKk,oPk);var olk = _v();
-       var omk = _o(33, e, s, gg);
-       var ook = _gd('./page/API/pages/get-network-type/get-network-type.wxml', omk, e_, d_);
-       if (ook) {
-         var onk = {};
-         ook(onk,onk,olk, gg);
-       } else _w(omk, './page/API/pages/get-network-type/get-network-type.wxml', 0, 0);_(oKk,olk);_(r,oKk);oHk.pop();oHk.pop();
+        oQl.wxVkey = 1;var oTl = _n("text");_r(oTl, 'class', 25, e, s, gg);var oUl = _o(26, e, s, gg);_(oTl,oUl);_(oQl,oTl);
+      } _(oGl,oQl);_(oFl,oGl);var oVl = _n("view");_r(oVl, 'class', 27, e, s, gg);var oWl = _m( "button", ["bindtap", 28,"type", 1], e, s, gg);var oXl = _o(30, e, s, gg);_(oWl,oXl);_(oVl,oWl);var oYl = _n("button");_r(oYl, 'bindtap', 31, e, s, gg);var oZl = _o(32, e, s, gg);_(oYl,oZl);_(oVl,oYl);_(oFl,oVl);_(oEl,oFl);_(o_k,oEl);var oal = _v();
+       var obl = _o(33, e, s, gg);
+       var odl = _gd('./page/API/pages/get-network-type/get-network-type.wxml', obl, e_, d_);
+       if (odl) {
+         var ocl = {};
+         odl(ocl,ocl,oal, gg);
+       } else _w(obl, './page/API/pages/get-network-type/get-network-type.wxml', 0, 0);_(o_k,oal);_(r,o_k);oxk.pop();oxk.pop();
     return r;
   };
         e_["./page/API/pages/get-network-type/get-network-type.wxml"]={f:m2,j:[],i:[],ti:["../../../common/head.wxml","../../../common/foot.wxml"],ic:[]};

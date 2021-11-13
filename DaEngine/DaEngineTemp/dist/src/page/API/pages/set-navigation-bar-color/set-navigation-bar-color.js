@@ -580,7 +580,7 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/foot.wxml');return}
     p_[b]=true
     try{
-      var ore = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var ose = _m( "image", ["class", 4,"src", 1], e, s, gg);_(ore,ose);_(r,ore);
+      var oJe = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var oKe = _m( "image", ["class", 4,"src", 1], e, s, gg);_(oJe,oKe);_(r,oJe);
     }catch(err){
     p_[b]=false
     throw err
@@ -598,10 +598,10 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/head.wxml');return}
     p_[b]=true
     try{
-      var owe = _n("view");_r(owe, 'class', 6, e, s, gg);var oxe = _n("view");_r(oxe, 'class', 7, e, s, gg);var oye = _o(8, e, s, gg);_(oxe,oye);_(owe,oxe);var oze = _n("view");_r(oze, 'class', 9, e, s, gg);_(owe,oze);var o_e = _v();
+      var oOe = _n("view");_r(oOe, 'class', 6, e, s, gg);var oPe = _n("view");_r(oPe, 'class', 7, e, s, gg);var oQe = _o(8, e, s, gg);_(oPe,oQe);_(oOe,oPe);var oRe = _n("view");_r(oRe, 'class', 9, e, s, gg);_(oOe,oRe);var oSe = _v();
       if (_o(10, e, s, gg)) {
-        o_e.wxVkey = 1;var oAf = _n("view");_r(oAf, 'class', 11, e, s, gg);var oCf = _o(10, e, s, gg);_(oAf,oCf);_(o_e, oAf);
-      } _(owe,o_e);_(r,owe);
+        oSe.wxVkey = 1;var oTe = _n("view");_r(oTe, 'class', 11, e, s, gg);var oVe = _o(10, e, s, gg);_(oTe,oVe);_(oSe, oTe);
+      } _(oOe,oSe);_(r,oOe);
     }catch(err){
     p_[b]=false
     throw err
@@ -615,19 +615,19 @@ var z = [];
   };
         e_["./page/common/head.wxml"]={f:m1,j:[],i:[],ti:[],ic:[]};d_["./page/API/pages/set-navigation-bar-color/set-navigation-bar-color.wxml"] = {};
   var m2=function(e,s,r,gg){
-    var oFf = e_["./page/API/pages/set-navigation-bar-color/set-navigation-bar-color.wxml"].i;_ai(oFf, '../../../common/head.wxml', e_, './page/API/pages/set-navigation-bar-color/set-navigation-bar-color.wxml', 0, 0);_ai(oFf, '../../../common/foot.wxml', e_, './page/API/pages/set-navigation-bar-color/set-navigation-bar-color.wxml', 0, 0);var oIf = _n("view");_r(oIf, 'class', 12, e, s, gg);var oJf = _v();
-       var oKf = _o(13, e, s, gg);
-       var oMf = _gd('./page/API/pages/set-navigation-bar-color/set-navigation-bar-color.wxml', oKf, e_, d_);
-       if (oMf) {
-         var oLf = _1(14,e,s,gg);
-         oMf(oLf,oLf,oJf, gg);
-       } else _w(oKf, './page/API/pages/set-navigation-bar-color/set-navigation-bar-color.wxml', 0, 0);_(oIf,oJf);var oNf = _m( "form", ["bindsubmit", 15,"class", 1], e, s, gg);var oOf = _n("view");_r(oOf, 'class', 17, e, s, gg);var oPf = _n("view");_r(oPf, 'class', 18, e, s, gg);var oQf = _n("view");_r(oQf, 'class', 19, e, s, gg);var oRf = _n("view");_r(oRf, 'class', 20, e, s, gg);var oSf = _o(21, e, s, gg);_(oRf,oSf);_(oQf,oRf);_(oPf,oQf);var oTf = _n("view");_r(oTf, 'class', 22, e, s, gg);var oUf = _m( "input", ["class", 23,"name", 1,"placeholder", 2,"type", 3], e, s, gg);_(oTf,oUf);_(oPf,oTf);_(oOf,oPf);var oVf = _n("view");_r(oVf, 'class', 18, e, s, gg);var oWf = _n("view");_r(oWf, 'class', 19, e, s, gg);var oXf = _n("view");_r(oXf, 'class', 20, e, s, gg);var oYf = _o(27, e, s, gg);_(oXf,oYf);_(oWf,oXf);_(oVf,oWf);var oZf = _n("view");_r(oZf, 'class', 22, e, s, gg);var oaf = _m( "input", ["class", 23,"type", 3,"name", 5,"placeholder", 6], e, s, gg);_(oZf,oaf);_(oVf,oZf);_(oOf,oVf);_(oNf,oOf);var obf = _n("view");_r(obf, 'class', 30, e, s, gg);var ocf = _m( "button", ["formType", 31,"type", 1], e, s, gg);var odf = _o(33, e, s, gg);_(ocf,odf);_(obf,ocf);_(oNf,obf);_(oIf,oNf);var oef = _v();
-       var off = _o(34, e, s, gg);
-       var ohf = _gd('./page/API/pages/set-navigation-bar-color/set-navigation-bar-color.wxml', off, e_, d_);
-       if (ohf) {
-         var ogf = {};
-         ohf(ogf,ogf,oef, gg);
-       } else _w(off, './page/API/pages/set-navigation-bar-color/set-navigation-bar-color.wxml', 0, 0);_(oIf,oef);_(r,oIf);oFf.pop();oFf.pop();
+    var oYe = e_["./page/API/pages/set-navigation-bar-color/set-navigation-bar-color.wxml"].i;_ai(oYe, '../../../common/head.wxml', e_, './page/API/pages/set-navigation-bar-color/set-navigation-bar-color.wxml', 0, 0);_ai(oYe, '../../../common/foot.wxml', e_, './page/API/pages/set-navigation-bar-color/set-navigation-bar-color.wxml', 0, 0);var obe = _n("view");_r(obe, 'class', 12, e, s, gg);var oce = _v();
+       var ode = _o(13, e, s, gg);
+       var ofe = _gd('./page/API/pages/set-navigation-bar-color/set-navigation-bar-color.wxml', ode, e_, d_);
+       if (ofe) {
+         var oee = _1(14,e,s,gg);
+         ofe(oee,oee,oce, gg);
+       } else _w(ode, './page/API/pages/set-navigation-bar-color/set-navigation-bar-color.wxml', 0, 0);_(obe,oce);var oge = _m( "form", ["bindsubmit", 15,"class", 1], e, s, gg);var ohe = _n("view");_r(ohe, 'class', 17, e, s, gg);var oie = _n("view");_r(oie, 'class', 18, e, s, gg);var oje = _n("view");_r(oje, 'class', 19, e, s, gg);var oke = _n("view");_r(oke, 'class', 20, e, s, gg);var ole = _o(21, e, s, gg);_(oke,ole);_(oje,oke);_(oie,oje);var ome = _n("view");_r(ome, 'class', 22, e, s, gg);var one = _m( "input", ["class", 23,"name", 1,"placeholder", 2,"type", 3], e, s, gg);_(ome,one);_(oie,ome);_(ohe,oie);var ooe = _n("view");_r(ooe, 'class', 18, e, s, gg);var ope = _n("view");_r(ope, 'class', 19, e, s, gg);var oqe = _n("view");_r(oqe, 'class', 20, e, s, gg);var ore = _o(27, e, s, gg);_(oqe,ore);_(ope,oqe);_(ooe,ope);var ose = _n("view");_r(ose, 'class', 22, e, s, gg);var ote = _m( "input", ["class", 23,"type", 3,"name", 5,"placeholder", 6], e, s, gg);_(ose,ote);_(ooe,ose);_(ohe,ooe);_(oge,ohe);var oue = _n("view");_r(oue, 'class', 30, e, s, gg);var ove = _m( "button", ["formType", 31,"type", 1], e, s, gg);var owe = _o(33, e, s, gg);_(ove,owe);_(oue,ove);_(oge,oue);_(obe,oge);var oxe = _v();
+       var oye = _o(34, e, s, gg);
+       var o_e = _gd('./page/API/pages/set-navigation-bar-color/set-navigation-bar-color.wxml', oye, e_, d_);
+       if (o_e) {
+         var oze = {};
+         o_e(oze,oze,oxe, gg);
+       } else _w(oye, './page/API/pages/set-navigation-bar-color/set-navigation-bar-color.wxml', 0, 0);_(obe,oxe);_(r,obe);oYe.pop();oYe.pop();
     return r;
   };
         e_["./page/API/pages/set-navigation-bar-color/set-navigation-bar-color.wxml"]={f:m2,j:[],i:[],ti:["../../../common/head.wxml","../../../common/foot.wxml"],ic:[]};

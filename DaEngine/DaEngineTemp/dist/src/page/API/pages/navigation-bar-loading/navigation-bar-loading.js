@@ -580,7 +580,7 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/foot.wxml');return}
     p_[b]=true
     try{
-      var oJe = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var oKe = _m( "image", ["class", 4,"src", 1], e, s, gg);_(oJe,oKe);_(r,oJe);
+      var olf = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var omf = _m( "image", ["class", 4,"src", 1], e, s, gg);_(olf,omf);_(r,olf);
     }catch(err){
     p_[b]=false
     throw err
@@ -598,10 +598,10 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/head.wxml');return}
     p_[b]=true
     try{
-      var oOe = _n("view");_r(oOe, 'class', 6, e, s, gg);var oPe = _n("view");_r(oPe, 'class', 7, e, s, gg);var oQe = _o(8, e, s, gg);_(oPe,oQe);_(oOe,oPe);var oRe = _n("view");_r(oRe, 'class', 9, e, s, gg);_(oOe,oRe);var oSe = _v();
+      var oqf = _n("view");_r(oqf, 'class', 6, e, s, gg);var orf = _n("view");_r(orf, 'class', 7, e, s, gg);var osf = _o(8, e, s, gg);_(orf,osf);_(oqf,orf);var otf = _n("view");_r(otf, 'class', 9, e, s, gg);_(oqf,otf);var ouf = _v();
       if (_o(10, e, s, gg)) {
-        oSe.wxVkey = 1;var oTe = _n("view");_r(oTe, 'class', 11, e, s, gg);var oVe = _o(10, e, s, gg);_(oTe,oVe);_(oSe, oTe);
-      } _(oOe,oSe);_(r,oOe);
+        ouf.wxVkey = 1;var ovf = _n("view");_r(ovf, 'class', 11, e, s, gg);var oxf = _o(10, e, s, gg);_(ovf,oxf);_(ouf, ovf);
+      } _(oqf,ouf);_(r,oqf);
     }catch(err){
     p_[b]=false
     throw err
@@ -615,19 +615,19 @@ var z = [];
   };
         e_["./page/common/head.wxml"]={f:m1,j:[],i:[],ti:[],ic:[]};d_["./page/API/pages/navigation-bar-loading/navigation-bar-loading.wxml"] = {};
   var m2=function(e,s,r,gg){
-    var oYe = e_["./page/API/pages/navigation-bar-loading/navigation-bar-loading.wxml"].i;_ai(oYe, '../../../common/head.wxml', e_, './page/API/pages/navigation-bar-loading/navigation-bar-loading.wxml', 0, 0);_ai(oYe, '../../../common/foot.wxml', e_, './page/API/pages/navigation-bar-loading/navigation-bar-loading.wxml', 0, 0);var obe = _n("view");_r(obe, 'class', 12, e, s, gg);var oce = _v();
-       var ode = _o(13, e, s, gg);
-       var ofe = _gd('./page/API/pages/navigation-bar-loading/navigation-bar-loading.wxml', ode, e_, d_);
-       if (ofe) {
-         var oee = _1(14,e,s,gg);
-         ofe(oee,oee,oce, gg);
-       } else _w(ode, './page/API/pages/navigation-bar-loading/navigation-bar-loading.wxml', 0, 0);_(obe,oce);var oge = _n("view");_r(oge, 'class', 15, e, s, gg);var ohe = _n("view");_r(ohe, 'class', 16, e, s, gg);var oie = _m( "button", ["bindtap", 17,"type", 1], e, s, gg);var oje = _o(19, e, s, gg);_(oie,oje);_(ohe,oie);var oke = _n("button");_r(oke, 'bindtap', 20, e, s, gg);var ole = _o(21, e, s, gg);_(oke,ole);_(ohe,oke);_(oge,ohe);_(obe,oge);var ome = _v();
-       var one = _o(22, e, s, gg);
-       var ope = _gd('./page/API/pages/navigation-bar-loading/navigation-bar-loading.wxml', one, e_, d_);
-       if (ope) {
-         var ooe = {};
-         ope(ooe,ooe,ome, gg);
-       } else _w(one, './page/API/pages/navigation-bar-loading/navigation-bar-loading.wxml', 0, 0);_(obe,ome);_(r,obe);oYe.pop();oYe.pop();
+    var o_f = e_["./page/API/pages/navigation-bar-loading/navigation-bar-loading.wxml"].i;_ai(o_f, '../../../common/head.wxml', e_, './page/API/pages/navigation-bar-loading/navigation-bar-loading.wxml', 0, 0);_ai(o_f, '../../../common/foot.wxml', e_, './page/API/pages/navigation-bar-loading/navigation-bar-loading.wxml', 0, 0);var oCg = _n("view");_r(oCg, 'class', 12, e, s, gg);var oDg = _v();
+       var oEg = _o(13, e, s, gg);
+       var oGg = _gd('./page/API/pages/navigation-bar-loading/navigation-bar-loading.wxml', oEg, e_, d_);
+       if (oGg) {
+         var oFg = _1(14,e,s,gg);
+         oGg(oFg,oFg,oDg, gg);
+       } else _w(oEg, './page/API/pages/navigation-bar-loading/navigation-bar-loading.wxml', 0, 0);_(oCg,oDg);var oHg = _n("view");_r(oHg, 'class', 15, e, s, gg);var oIg = _n("view");_r(oIg, 'class', 16, e, s, gg);var oJg = _m( "button", ["bindtap", 17,"type", 1], e, s, gg);var oKg = _o(19, e, s, gg);_(oJg,oKg);_(oIg,oJg);var oLg = _n("button");_r(oLg, 'bindtap', 20, e, s, gg);var oMg = _o(21, e, s, gg);_(oLg,oMg);_(oIg,oLg);_(oHg,oIg);_(oCg,oHg);var oNg = _v();
+       var oOg = _o(22, e, s, gg);
+       var oQg = _gd('./page/API/pages/navigation-bar-loading/navigation-bar-loading.wxml', oOg, e_, d_);
+       if (oQg) {
+         var oPg = {};
+         oQg(oPg,oPg,oNg, gg);
+       } else _w(oOg, './page/API/pages/navigation-bar-loading/navigation-bar-loading.wxml', 0, 0);_(oCg,oNg);_(r,oCg);o_f.pop();o_f.pop();
     return r;
   };
         e_["./page/API/pages/navigation-bar-loading/navigation-bar-loading.wxml"]={f:m2,j:[],i:[],ti:["../../../common/head.wxml","../../../common/foot.wxml"],ic:[]};

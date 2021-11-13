@@ -580,7 +580,7 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/foot.wxml');return}
     p_[b]=true
     try{
-      var oAU = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var oBU = _m( "image", ["class", 4,"src", 1], e, s, gg);_(oAU,oBU);_(r,oAU);
+      var oKV = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var oLV = _m( "image", ["class", 4,"src", 1], e, s, gg);_(oKV,oLV);_(r,oKV);
     }catch(err){
     p_[b]=false
     throw err
@@ -598,10 +598,10 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/head.wxml');return}
     p_[b]=true
     try{
-      var oFU = _n("view");_r(oFU, 'class', 6, e, s, gg);var oGU = _n("view");_r(oGU, 'class', 7, e, s, gg);var oHU = _o(8, e, s, gg);_(oGU,oHU);_(oFU,oGU);var oIU = _n("view");_r(oIU, 'class', 9, e, s, gg);_(oFU,oIU);var oJU = _v();
+      var oPV = _n("view");_r(oPV, 'class', 6, e, s, gg);var oQV = _n("view");_r(oQV, 'class', 7, e, s, gg);var oRV = _o(8, e, s, gg);_(oQV,oRV);_(oPV,oQV);var oSV = _n("view");_r(oSV, 'class', 9, e, s, gg);_(oPV,oSV);var oTV = _v();
       if (_o(10, e, s, gg)) {
-        oJU.wxVkey = 1;var oKU = _n("view");_r(oKU, 'class', 11, e, s, gg);var oMU = _o(10, e, s, gg);_(oKU,oMU);_(oJU, oKU);
-      } _(oFU,oJU);_(r,oFU);
+        oTV.wxVkey = 1;var oUV = _n("view");_r(oUV, 'class', 11, e, s, gg);var oWV = _o(10, e, s, gg);_(oUV,oWV);_(oTV, oUV);
+      } _(oPV,oTV);_(r,oPV);
     }catch(err){
     p_[b]=false
     throw err
@@ -615,13 +615,13 @@ var z = [];
   };
         e_["./page/common/head.wxml"]={f:m1,j:[],i:[],ti:[],ic:[]};d_["./page/component/pages/navigator/navigate.wxml"] = {};
   var m2=function(e,s,r,gg){
-    var oPU = e_["./page/component/pages/navigator/navigate.wxml"].i;_ai(oPU, '../../../common/head.wxml', e_, './page/component/pages/navigator/navigate.wxml', 0, 0);_ai(oPU, '../../../common/foot.wxml', e_, './page/component/pages/navigator/navigate.wxml', 0, 0);var oSU = _n("view");_r(oSU, 'class', 12, e, s, gg);var oTU = _v();
-       var oUU = _o(13, e, s, gg);
-       var oWU = _gd('./page/component/pages/navigator/navigate.wxml', oUU, e_, d_);
-       if (oWU) {
-         var oVU = _1(14,e,s,gg);
-         oWU(oVU,oVU,oTU, gg);
-       } else _w(oUU, './page/component/pages/navigator/navigate.wxml', 0, 0);_(oSU,oTU);_(r,oSU);oPU.pop();oPU.pop();
+    var oZV = e_["./page/component/pages/navigator/navigate.wxml"].i;_ai(oZV, '../../../common/head.wxml', e_, './page/component/pages/navigator/navigate.wxml', 0, 0);_ai(oZV, '../../../common/foot.wxml', e_, './page/component/pages/navigator/navigate.wxml', 0, 0);var ocV = _n("view");_r(ocV, 'class', 12, e, s, gg);var odV = _v();
+       var oeV = _o(13, e, s, gg);
+       var ogV = _gd('./page/component/pages/navigator/navigate.wxml', oeV, e_, d_);
+       if (ogV) {
+         var ofV = _1(14,e,s,gg);
+         ogV(ofV,ofV,odV, gg);
+       } else _w(oeV, './page/component/pages/navigator/navigate.wxml', 0, 0);_(ocV,odV);_(r,ocV);oZV.pop();oZV.pop();
     return r;
   };
         e_["./page/component/pages/navigator/navigate.wxml"]={f:m2,j:[],i:[],ti:["../../../common/head.wxml","../../../common/foot.wxml"],ic:[]};

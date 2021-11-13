@@ -580,7 +580,7 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/foot.wxml');return}
     p_[b]=true
     try{
-      var ojR = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var okR = _m( "image", ["class", 4,"src", 1], e, s, gg);_(ojR,okR);_(r,ojR);
+      var oVS = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var oWS = _m( "image", ["class", 4,"src", 1], e, s, gg);_(oVS,oWS);_(r,oVS);
     }catch(err){
     p_[b]=false
     throw err
@@ -598,10 +598,10 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/head.wxml');return}
     p_[b]=true
     try{
-      var ooR = _n("view");_r(ooR, 'class', 6, e, s, gg);var opR = _n("view");_r(opR, 'class', 7, e, s, gg);var oqR = _o(8, e, s, gg);_(opR,oqR);_(ooR,opR);var orR = _n("view");_r(orR, 'class', 9, e, s, gg);_(ooR,orR);var osR = _v();
+      var oaS = _n("view");_r(oaS, 'class', 6, e, s, gg);var obS = _n("view");_r(obS, 'class', 7, e, s, gg);var ocS = _o(8, e, s, gg);_(obS,ocS);_(oaS,obS);var odS = _n("view");_r(odS, 'class', 9, e, s, gg);_(oaS,odS);var oeS = _v();
       if (_o(10, e, s, gg)) {
-        osR.wxVkey = 1;var otR = _n("view");_r(otR, 'class', 11, e, s, gg);var ovR = _o(10, e, s, gg);_(otR,ovR);_(osR, otR);
-      } _(ooR,osR);_(r,ooR);
+        oeS.wxVkey = 1;var ofS = _n("view");_r(ofS, 'class', 11, e, s, gg);var ohS = _o(10, e, s, gg);_(ofS,ohS);_(oeS, ofS);
+      } _(oaS,oeS);_(r,oaS);
     }catch(err){
     p_[b]=false
     throw err
@@ -615,19 +615,19 @@ var z = [];
   };
         e_["./page/common/head.wxml"]={f:m1,j:[],i:[],ti:[],ic:[]};d_["./page/component/pages/switch/switch.wxml"] = {};
   var m2=function(e,s,r,gg){
-    var oyR = e_["./page/component/pages/switch/switch.wxml"].i;_ai(oyR, '../../../common/head.wxml', e_, './page/component/pages/switch/switch.wxml', 0, 0);_ai(oyR, '../../../common/foot.wxml', e_, './page/component/pages/switch/switch.wxml', 0, 0);var oAS = _n("view");_r(oAS, 'class', 12, e, s, gg);var oBS = _v();
-       var oCS = _o(13, e, s, gg);
-       var oES = _gd('./page/component/pages/switch/switch.wxml', oCS, e_, d_);
-       if (oES) {
-         var oDS = _1(14,e,s,gg);
-         oES(oDS,oDS,oBS, gg);
-       } else _w(oCS, './page/component/pages/switch/switch.wxml', 0, 0);_(oAS,oBS);var oFS = _n("view");_r(oFS, 'class', 15, e, s, gg);var oGS = _n("view");_r(oGS, 'class', 16, e, s, gg);var oHS = _n("view");_r(oHS, 'class', 17, e, s, gg);var oIS = _o(18, e, s, gg);_(oHS,oIS);_(oGS,oHS);var oJS = _n("view");_r(oJS, 'class', 19, e, s, gg);var oKS = _m( "switch", ["checked", -1,"bindchange", 20], e, s, gg);_(oJS,oKS);var oLS = _n("switch");_r(oLS, 'bindchange', 21, e, s, gg);_(oJS,oLS);_(oGS,oJS);_(oFS,oGS);var oMS = _n("view");_r(oMS, 'class', 22, e, s, gg);var oNS = _n("view");_r(oNS, 'class', 17, e, s, gg);var oOS = _o(23, e, s, gg);_(oNS,oOS);_(oMS,oNS);var oPS = _n("view");_r(oPS, 'class', 24, e, s, gg);var oQS = _n("view");_r(oQS, 'class', 25, e, s, gg);var oRS = _n("view");_r(oRS, 'class', 26, e, s, gg);var oSS = _o(27, e, s, gg);_(oRS,oSS);_(oQS,oRS);var oTS = _n("view");_r(oTS, 'class', 28, e, s, gg);var oUS = _n("switch");oUS.attr['checked'] = true;_(oTS,oUS);_(oQS,oTS);_(oPS,oQS);var oVS = _n("view");_r(oVS, 'class', 25, e, s, gg);var oWS = _n("view");_r(oWS, 'class', 26, e, s, gg);var oXS = _o(29, e, s, gg);_(oWS,oXS);_(oVS,oWS);var oYS = _n("view");_r(oYS, 'class', 28, e, s, gg);var oZS = _n("switch");_(oYS,oZS);_(oVS,oYS);_(oPS,oVS);_(oMS,oPS);_(oFS,oMS);_(oAS,oFS);var oaS = _v();
-       var obS = _o(30, e, s, gg);
-       var odS = _gd('./page/component/pages/switch/switch.wxml', obS, e_, d_);
-       if (odS) {
-         var ocS = {};
-         odS(ocS,ocS,oaS, gg);
-       } else _w(obS, './page/component/pages/switch/switch.wxml', 0, 0);_(oAS,oaS);_(r,oAS);oyR.pop();oyR.pop();
+    var okS = e_["./page/component/pages/switch/switch.wxml"].i;_ai(okS, '../../../common/head.wxml', e_, './page/component/pages/switch/switch.wxml', 0, 0);_ai(okS, '../../../common/foot.wxml', e_, './page/component/pages/switch/switch.wxml', 0, 0);var onS = _n("view");_r(onS, 'class', 12, e, s, gg);var ooS = _v();
+       var opS = _o(13, e, s, gg);
+       var orS = _gd('./page/component/pages/switch/switch.wxml', opS, e_, d_);
+       if (orS) {
+         var oqS = _1(14,e,s,gg);
+         orS(oqS,oqS,ooS, gg);
+       } else _w(opS, './page/component/pages/switch/switch.wxml', 0, 0);_(onS,ooS);var osS = _n("view");_r(osS, 'class', 15, e, s, gg);var otS = _n("view");_r(otS, 'class', 16, e, s, gg);var ouS = _n("view");_r(ouS, 'class', 17, e, s, gg);var ovS = _o(18, e, s, gg);_(ouS,ovS);_(otS,ouS);var owS = _n("view");_r(owS, 'class', 19, e, s, gg);var oxS = _m( "switch", ["checked", -1,"bindchange", 20], e, s, gg);_(owS,oxS);var oyS = _n("switch");_r(oyS, 'bindchange', 21, e, s, gg);_(owS,oyS);_(otS,owS);_(osS,otS);var ozS = _n("view");_r(ozS, 'class', 22, e, s, gg);var o_S = _n("view");_r(o_S, 'class', 17, e, s, gg);var oAT = _o(23, e, s, gg);_(o_S,oAT);_(ozS,o_S);var oBT = _n("view");_r(oBT, 'class', 24, e, s, gg);var oCT = _n("view");_r(oCT, 'class', 25, e, s, gg);var oDT = _n("view");_r(oDT, 'class', 26, e, s, gg);var oET = _o(27, e, s, gg);_(oDT,oET);_(oCT,oDT);var oFT = _n("view");_r(oFT, 'class', 28, e, s, gg);var oGT = _n("switch");oGT.attr['checked'] = true;_(oFT,oGT);_(oCT,oFT);_(oBT,oCT);var oHT = _n("view");_r(oHT, 'class', 25, e, s, gg);var oIT = _n("view");_r(oIT, 'class', 26, e, s, gg);var oJT = _o(29, e, s, gg);_(oIT,oJT);_(oHT,oIT);var oKT = _n("view");_r(oKT, 'class', 28, e, s, gg);var oLT = _n("switch");_(oKT,oLT);_(oHT,oKT);_(oBT,oHT);_(ozS,oBT);_(osS,ozS);_(onS,osS);var oMT = _v();
+       var oNT = _o(30, e, s, gg);
+       var oPT = _gd('./page/component/pages/switch/switch.wxml', oNT, e_, d_);
+       if (oPT) {
+         var oOT = {};
+         oPT(oOT,oOT,oMT, gg);
+       } else _w(oNT, './page/component/pages/switch/switch.wxml', 0, 0);_(onS,oMT);_(r,onS);okS.pop();okS.pop();
     return r;
   };
         e_["./page/component/pages/switch/switch.wxml"]={f:m2,j:[],i:[],ti:["../../../common/head.wxml","../../../common/foot.wxml"],ic:[]};

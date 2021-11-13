@@ -580,7 +580,7 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/foot.wxml');return}
     p_[b]=true
     try{
-      var oYU = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var oZU = _m( "image", ["class", 4,"src", 1], e, s, gg);_(oYU,oZU);_(r,oYU);
+      var oAU = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var oBU = _m( "image", ["class", 4,"src", 1], e, s, gg);_(oAU,oBU);_(r,oAU);
     }catch(err){
     p_[b]=false
     throw err
@@ -598,10 +598,10 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/head.wxml');return}
     p_[b]=true
     try{
-      var odU = _n("view");_r(odU, 'class', 6, e, s, gg);var oeU = _n("view");_r(oeU, 'class', 7, e, s, gg);var ofU = _o(8, e, s, gg);_(oeU,ofU);_(odU,oeU);var ogU = _n("view");_r(ogU, 'class', 9, e, s, gg);_(odU,ogU);var ohU = _v();
+      var oFU = _n("view");_r(oFU, 'class', 6, e, s, gg);var oGU = _n("view");_r(oGU, 'class', 7, e, s, gg);var oHU = _o(8, e, s, gg);_(oGU,oHU);_(oFU,oGU);var oIU = _n("view");_r(oIU, 'class', 9, e, s, gg);_(oFU,oIU);var oJU = _v();
       if (_o(10, e, s, gg)) {
-        ohU.wxVkey = 1;var oiU = _n("view");_r(oiU, 'class', 11, e, s, gg);var okU = _o(10, e, s, gg);_(oiU,okU);_(ohU, oiU);
-      } _(odU,ohU);_(r,odU);
+        oJU.wxVkey = 1;var oKU = _n("view");_r(oKU, 'class', 11, e, s, gg);var oMU = _o(10, e, s, gg);_(oKU,oMU);_(oJU, oKU);
+      } _(oFU,oJU);_(r,oFU);
     }catch(err){
     p_[b]=false
     throw err
@@ -615,13 +615,13 @@ var z = [];
   };
         e_["./page/common/head.wxml"]={f:m1,j:[],i:[],ti:[],ic:[]};d_["./page/component/pages/navigator/redirect.wxml"] = {};
   var m2=function(e,s,r,gg){
-    var onU = e_["./page/component/pages/navigator/redirect.wxml"].i;_ai(onU, '../../../common/head.wxml', e_, './page/component/pages/navigator/redirect.wxml', 0, 0);_ai(onU, '../../../common/foot.wxml', e_, './page/component/pages/navigator/redirect.wxml', 0, 0);var oqU = _n("view");_r(oqU, 'class', 12, e, s, gg);var orU = _v();
-       var osU = _o(13, e, s, gg);
-       var ouU = _gd('./page/component/pages/navigator/redirect.wxml', osU, e_, d_);
-       if (ouU) {
-         var otU = _1(14,e,s,gg);
-         ouU(otU,otU,orU, gg);
-       } else _w(osU, './page/component/pages/navigator/redirect.wxml', 0, 0);_(oqU,orU);_(r,oqU);onU.pop();onU.pop();
+    var oPU = e_["./page/component/pages/navigator/redirect.wxml"].i;_ai(oPU, '../../../common/head.wxml', e_, './page/component/pages/navigator/redirect.wxml', 0, 0);_ai(oPU, '../../../common/foot.wxml', e_, './page/component/pages/navigator/redirect.wxml', 0, 0);var oSU = _n("view");_r(oSU, 'class', 12, e, s, gg);var oTU = _v();
+       var oUU = _o(13, e, s, gg);
+       var oWU = _gd('./page/component/pages/navigator/redirect.wxml', oUU, e_, d_);
+       if (oWU) {
+         var oVU = _1(14,e,s,gg);
+         oWU(oVU,oVU,oTU, gg);
+       } else _w(oUU, './page/component/pages/navigator/redirect.wxml', 0, 0);_(oSU,oTU);_(r,oSU);oPU.pop();oPU.pop();
     return r;
   };
         e_["./page/component/pages/navigator/redirect.wxml"]={f:m2,j:[],i:[],ti:["../../../common/head.wxml","../../../common/foot.wxml"],ic:[]};

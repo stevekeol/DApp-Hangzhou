@@ -580,7 +580,7 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/foot.wxml');return}
     p_[b]=true
     try{
-      var obO = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var ocO = _m( "image", ["class", 4,"src", 1], e, s, gg);_(obO,ocO);_(r,obO);
+      var oRN = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var oSN = _m( "image", ["class", 4,"src", 1], e, s, gg);_(oRN,oSN);_(r,oRN);
     }catch(err){
     p_[b]=false
     throw err
@@ -598,10 +598,10 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/head.wxml');return}
     p_[b]=true
     try{
-      var ogO = _n("view");_r(ogO, 'class', 6, e, s, gg);var ohO = _n("view");_r(ohO, 'class', 7, e, s, gg);var oiO = _o(8, e, s, gg);_(ohO,oiO);_(ogO,ohO);var ojO = _n("view");_r(ojO, 'class', 9, e, s, gg);_(ogO,ojO);var okO = _v();
+      var oWN = _n("view");_r(oWN, 'class', 6, e, s, gg);var oXN = _n("view");_r(oXN, 'class', 7, e, s, gg);var oYN = _o(8, e, s, gg);_(oXN,oYN);_(oWN,oXN);var oZN = _n("view");_r(oZN, 'class', 9, e, s, gg);_(oWN,oZN);var oaN = _v();
       if (_o(10, e, s, gg)) {
-        okO.wxVkey = 1;var olO = _n("view");_r(olO, 'class', 11, e, s, gg);var onO = _o(10, e, s, gg);_(olO,onO);_(okO, olO);
-      } _(ogO,okO);_(r,ogO);
+        oaN.wxVkey = 1;var obN = _n("view");_r(obN, 'class', 11, e, s, gg);var odN = _o(10, e, s, gg);_(obN,odN);_(oaN, obN);
+      } _(oWN,oaN);_(r,oWN);
     }catch(err){
     p_[b]=false
     throw err
@@ -615,19 +615,19 @@ var z = [];
   };
         e_["./page/common/head.wxml"]={f:m1,j:[],i:[],ti:[],ic:[]};d_["./page/component/pages/label/label.wxml"] = {};
   var m2=function(e,s,r,gg){
-    var oqO = e_["./page/component/pages/label/label.wxml"].i;_ai(oqO, '../../../common/head.wxml', e_, './page/component/pages/label/label.wxml', 0, 0);_ai(oqO, '../../../common/foot.wxml', e_, './page/component/pages/label/label.wxml', 0, 0);var otO = _n("view");_r(otO, 'class', 12, e, s, gg);var ouO = _v();
-       var ovO = _o(13, e, s, gg);
-       var oxO = _gd('./page/component/pages/label/label.wxml', ovO, e_, d_);
-       if (oxO) {
-         var owO = _1(14,e,s,gg);
-         oxO(owO,owO,ouO, gg);
-       } else _w(ovO, './page/component/pages/label/label.wxml', 0, 0);_(otO,ouO);var oyO = _n("view");_r(oyO, 'class', 15, e, s, gg);var ozO = _n("view");_r(ozO, 'class', 16, e, s, gg);var o_O = _n("view");_r(o_O, 'class', 17, e, s, gg);var oAP = _o(18, e, s, gg);_(o_O,oAP);_(ozO,o_O);var oBP = _m( "checkbox-group", ["bindchange", 19,"class", 1], e, s, gg);var oCP = _v();var oDP = function(oHP,oGP,oFP,gg){var oEP = _n("view");_r(oEP, 'class', 22, oHP, oGP, gg);var oJP = _n("label");var oKP = _m( "checkbox", ["checked", 23,"value", 1], oHP, oGP, gg);_(oJP,oKP);var oLP = _n("text");_r(oLP, 'class', 25, oHP, oGP, gg);var oMP = _o(26, oHP, oGP, gg);_(oLP,oMP);_(oJP,oLP);_(oEP,oJP);_(oFP, oEP);return oFP;};_2(21, oDP, e, s, gg, oCP, "item", "index", '');_(oBP,oCP);_(ozO,oBP);_(oyO,ozO);var oNP = _n("view");_r(oNP, 'class', 16, e, s, gg);var oOP = _n("view");_r(oOP, 'class', 17, e, s, gg);var oPP = _o(27, e, s, gg);_(oOP,oPP);_(oNP,oOP);var oQP = _m( "radio-group", ["class", 20,"bindchange", 8], e, s, gg);var oRP = _v();var oSP = function(oWP,oVP,oUP,gg){var oTP = _n("view");_r(oTP, 'class', 30, oWP, oVP, gg);var oYP = _m( "radio", ["checked", 23,"id", 1,"value", 1], oWP, oVP, gg);_(oTP,oYP);var oZP = _m( "label", ["for", 24,"class", 7], oWP, oVP, gg);var oaP = _n("text");var obP = _o(24, oWP, oVP, gg);_(oaP,obP);_(oZP,oaP);_(oTP,oZP);_(oUP, oTP);return oUP;};_2(29, oSP, e, s, gg, oRP, "item", "index", '');_(oQP,oRP);_(oNP,oQP);_(oyO,oNP);var ocP = _n("view");_r(ocP, 'class', 16, e, s, gg);var odP = _n("view");_r(odP, 'class', 17, e, s, gg);var oeP = _o(32, e, s, gg);_(odP,oeP);_(ocP,odP);var ofP = _n("label");_r(ofP, 'class', 33, e, s, gg);var ogP = _n("checkbox");_r(ogP, 'class', 34, e, s, gg);var ohP = _o(35, e, s, gg);_(ogP,ohP);_(ofP,ogP);var oiP = _n("checkbox");_r(oiP, 'class', 34, e, s, gg);var ojP = _o(36, e, s, gg);_(oiP,ojP);_(ofP,oiP);var okP = _n("view");_r(okP, 'class', 37, e, s, gg);var olP = _o(38, e, s, gg);_(okP,olP);_(ofP,okP);_(ocP,ofP);_(oyO,ocP);_(otO,oyO);var omP = _v();
-       var onP = _o(39, e, s, gg);
-       var opP = _gd('./page/component/pages/label/label.wxml', onP, e_, d_);
-       if (opP) {
-         var ooP = {};
-         opP(ooP,ooP,omP, gg);
-       } else _w(onP, './page/component/pages/label/label.wxml', 0, 0);_(otO,omP);_(r,otO);oqO.pop();oqO.pop();
+    var ogN = e_["./page/component/pages/label/label.wxml"].i;_ai(ogN, '../../../common/head.wxml', e_, './page/component/pages/label/label.wxml', 0, 0);_ai(ogN, '../../../common/foot.wxml', e_, './page/component/pages/label/label.wxml', 0, 0);var ojN = _n("view");_r(ojN, 'class', 12, e, s, gg);var okN = _v();
+       var olN = _o(13, e, s, gg);
+       var onN = _gd('./page/component/pages/label/label.wxml', olN, e_, d_);
+       if (onN) {
+         var omN = _1(14,e,s,gg);
+         onN(omN,omN,okN, gg);
+       } else _w(olN, './page/component/pages/label/label.wxml', 0, 0);_(ojN,okN);var ooN = _n("view");_r(ooN, 'class', 15, e, s, gg);var opN = _n("view");_r(opN, 'class', 16, e, s, gg);var oqN = _n("view");_r(oqN, 'class', 17, e, s, gg);var orN = _o(18, e, s, gg);_(oqN,orN);_(opN,oqN);var osN = _m( "checkbox-group", ["bindchange", 19,"class", 1], e, s, gg);var otN = _v();var ouN = function(oyN,oxN,owN,gg){var ovN = _n("view");_r(ovN, 'class', 22, oyN, oxN, gg);var o_N = _n("label");var oAO = _m( "checkbox", ["checked", 23,"value", 1], oyN, oxN, gg);_(o_N,oAO);var oBO = _n("text");_r(oBO, 'class', 25, oyN, oxN, gg);var oCO = _o(26, oyN, oxN, gg);_(oBO,oCO);_(o_N,oBO);_(ovN,o_N);_(owN, ovN);return owN;};_2(21, ouN, e, s, gg, otN, "item", "index", '');_(osN,otN);_(opN,osN);_(ooN,opN);var oDO = _n("view");_r(oDO, 'class', 16, e, s, gg);var oEO = _n("view");_r(oEO, 'class', 17, e, s, gg);var oFO = _o(27, e, s, gg);_(oEO,oFO);_(oDO,oEO);var oGO = _m( "radio-group", ["class", 20,"bindchange", 8], e, s, gg);var oHO = _v();var oIO = function(oMO,oLO,oKO,gg){var oJO = _n("view");_r(oJO, 'class', 30, oMO, oLO, gg);var oOO = _m( "radio", ["checked", 23,"id", 1,"value", 1], oMO, oLO, gg);_(oJO,oOO);var oPO = _m( "label", ["for", 24,"class", 7], oMO, oLO, gg);var oQO = _n("text");var oRO = _o(24, oMO, oLO, gg);_(oQO,oRO);_(oPO,oQO);_(oJO,oPO);_(oKO, oJO);return oKO;};_2(29, oIO, e, s, gg, oHO, "item", "index", '');_(oGO,oHO);_(oDO,oGO);_(ooN,oDO);var oSO = _n("view");_r(oSO, 'class', 16, e, s, gg);var oTO = _n("view");_r(oTO, 'class', 17, e, s, gg);var oUO = _o(32, e, s, gg);_(oTO,oUO);_(oSO,oTO);var oVO = _n("label");_r(oVO, 'class', 33, e, s, gg);var oWO = _n("checkbox");_r(oWO, 'class', 34, e, s, gg);var oXO = _o(35, e, s, gg);_(oWO,oXO);_(oVO,oWO);var oYO = _n("checkbox");_r(oYO, 'class', 34, e, s, gg);var oZO = _o(36, e, s, gg);_(oYO,oZO);_(oVO,oYO);var oaO = _n("view");_r(oaO, 'class', 37, e, s, gg);var obO = _o(38, e, s, gg);_(oaO,obO);_(oVO,oaO);_(oSO,oVO);_(ooN,oSO);_(ojN,ooN);var ocO = _v();
+       var odO = _o(39, e, s, gg);
+       var ofO = _gd('./page/component/pages/label/label.wxml', odO, e_, d_);
+       if (ofO) {
+         var oeO = {};
+         ofO(oeO,oeO,ocO, gg);
+       } else _w(odO, './page/component/pages/label/label.wxml', 0, 0);_(ojN,ocO);_(r,ojN);ogN.pop();ogN.pop();
     return r;
   };
         e_["./page/component/pages/label/label.wxml"]={f:m2,j:[],i:[],ti:["../../../common/head.wxml","../../../common/foot.wxml"],ic:[]};

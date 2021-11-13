@@ -580,7 +580,7 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/foot.wxml');return}
     p_[b]=true
     try{
-      var ofX = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var ogX = _m( "image", ["class", 4,"src", 1], e, s, gg);_(ofX,ogX);_(r,ofX);
+      var oWY = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var oXY = _m( "image", ["class", 4,"src", 1], e, s, gg);_(oWY,oXY);_(r,oWY);
     }catch(err){
     p_[b]=false
     throw err
@@ -598,10 +598,10 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/head.wxml');return}
     p_[b]=true
     try{
-      var okX = _n("view");_r(okX, 'class', 6, e, s, gg);var olX = _n("view");_r(olX, 'class', 7, e, s, gg);var omX = _o(8, e, s, gg);_(olX,omX);_(okX,olX);var onX = _n("view");_r(onX, 'class', 9, e, s, gg);_(okX,onX);var ooX = _v();
+      var obY = _n("view");_r(obY, 'class', 6, e, s, gg);var ocY = _n("view");_r(ocY, 'class', 7, e, s, gg);var odY = _o(8, e, s, gg);_(ocY,odY);_(obY,ocY);var oeY = _n("view");_r(oeY, 'class', 9, e, s, gg);_(obY,oeY);var ofY = _v();
       if (_o(10, e, s, gg)) {
-        ooX.wxVkey = 1;var opX = _n("view");_r(opX, 'class', 11, e, s, gg);var orX = _o(10, e, s, gg);_(opX,orX);_(ooX, opX);
-      } _(okX,ooX);_(r,okX);
+        ofY.wxVkey = 1;var ogY = _n("view");_r(ogY, 'class', 11, e, s, gg);var oiY = _o(10, e, s, gg);_(ogY,oiY);_(ofY, ogY);
+      } _(obY,ofY);_(r,obY);
     }catch(err){
     p_[b]=false
     throw err
@@ -615,19 +615,19 @@ var z = [];
   };
         e_["./page/common/head.wxml"]={f:m1,j:[],i:[],ti:[],ic:[]};d_["./page/component/pages/canvas/canvas.wxml"] = {};
   var m2=function(e,s,r,gg){
-    var ouX = e_["./page/component/pages/canvas/canvas.wxml"].i;_ai(ouX, '../../../common/head.wxml', e_, './page/component/pages/canvas/canvas.wxml', 0, 0);_ai(ouX, '../../../common/foot.wxml', e_, './page/component/pages/canvas/canvas.wxml', 0, 0);var oxX = _n("view");_r(oxX, 'class', 12, e, s, gg);var oyX = _v();
-       var ozX = _o(13, e, s, gg);
-       var oAY = _gd('./page/component/pages/canvas/canvas.wxml', ozX, e_, d_);
-       if (oAY) {
-         var o_X = _1(14,e,s,gg);
-         oAY(o_X,o_X,oyX, gg);
-       } else _w(ozX, './page/component/pages/canvas/canvas.wxml', 0, 0);_(oxX,oyX);var oBY = _n("view");_r(oBY, 'class', 15, e, s, gg);var oCY = _n("view");_r(oCY, 'class', 16, e, s, gg);var oDY = _m( "canvas", ["canvasId", 17,"class", 0], e, s, gg);_(oCY,oDY);_(oBY,oCY);_(oxX,oBY);var oEY = _v();
-       var oFY = _o(18, e, s, gg);
-       var oHY = _gd('./page/component/pages/canvas/canvas.wxml', oFY, e_, d_);
-       if (oHY) {
-         var oGY = {};
-         oHY(oGY,oGY,oEY, gg);
-       } else _w(oFY, './page/component/pages/canvas/canvas.wxml', 0, 0);_(oxX,oEY);_(r,oxX);ouX.pop();ouX.pop();
+    var olY = e_["./page/component/pages/canvas/canvas.wxml"].i;_ai(olY, '../../../common/head.wxml', e_, './page/component/pages/canvas/canvas.wxml', 0, 0);_ai(olY, '../../../common/foot.wxml', e_, './page/component/pages/canvas/canvas.wxml', 0, 0);var ooY = _n("view");_r(ooY, 'class', 12, e, s, gg);var opY = _v();
+       var oqY = _o(13, e, s, gg);
+       var osY = _gd('./page/component/pages/canvas/canvas.wxml', oqY, e_, d_);
+       if (osY) {
+         var orY = _1(14,e,s,gg);
+         osY(orY,orY,opY, gg);
+       } else _w(oqY, './page/component/pages/canvas/canvas.wxml', 0, 0);_(ooY,opY);var otY = _n("view");_r(otY, 'class', 15, e, s, gg);var ouY = _n("view");_r(ouY, 'class', 16, e, s, gg);var ovY = _m( "canvas", ["canvasId", 17,"class", 0], e, s, gg);_(ouY,ovY);_(otY,ouY);_(ooY,otY);var owY = _v();
+       var oxY = _o(18, e, s, gg);
+       var ozY = _gd('./page/component/pages/canvas/canvas.wxml', oxY, e_, d_);
+       if (ozY) {
+         var oyY = {};
+         ozY(oyY,oyY,owY, gg);
+       } else _w(oxY, './page/component/pages/canvas/canvas.wxml', 0, 0);_(ooY,owY);_(r,ooY);olY.pop();olY.pop();
     return r;
   };
         e_["./page/component/pages/canvas/canvas.wxml"]={f:m2,j:[],i:[],ti:["../../../common/head.wxml","../../../common/foot.wxml"],ic:[]};

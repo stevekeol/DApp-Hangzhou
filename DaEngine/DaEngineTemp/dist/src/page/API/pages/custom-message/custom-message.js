@@ -580,7 +580,7 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/foot.wxml');return}
     p_[b]=true
     try{
-      var ota = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var oua = _m( "image", ["class", 4,"src", 1], e, s, gg);_(ota,oua);_(r,ota);
+      var ola = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var oma = _m( "image", ["class", 4,"src", 1], e, s, gg);_(ola,oma);_(r,ola);
     }catch(err){
     p_[b]=false
     throw err
@@ -598,10 +598,10 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/head.wxml');return}
     p_[b]=true
     try{
-      var oya = _n("view");_r(oya, 'class', 6, e, s, gg);var oza = _n("view");_r(oza, 'class', 7, e, s, gg);var o_a = _o(8, e, s, gg);_(oza,o_a);_(oya,oza);var oAb = _n("view");_r(oAb, 'class', 9, e, s, gg);_(oya,oAb);var oBb = _v();
+      var oqa = _n("view");_r(oqa, 'class', 6, e, s, gg);var ora = _n("view");_r(ora, 'class', 7, e, s, gg);var osa = _o(8, e, s, gg);_(ora,osa);_(oqa,ora);var ota = _n("view");_r(ota, 'class', 9, e, s, gg);_(oqa,ota);var oua = _v();
       if (_o(10, e, s, gg)) {
-        oBb.wxVkey = 1;var oCb = _n("view");_r(oCb, 'class', 11, e, s, gg);var oEb = _o(10, e, s, gg);_(oCb,oEb);_(oBb, oCb);
-      } _(oya,oBb);_(r,oya);
+        oua.wxVkey = 1;var ova = _n("view");_r(ova, 'class', 11, e, s, gg);var oxa = _o(10, e, s, gg);_(ova,oxa);_(oua, ova);
+      } _(oqa,oua);_(r,oqa);
     }catch(err){
     p_[b]=false
     throw err
@@ -615,19 +615,19 @@ var z = [];
   };
         e_["./page/common/head.wxml"]={f:m1,j:[],i:[],ti:[],ic:[]};d_["./page/API/pages/custom-message/custom-message.wxml"] = {};
   var m2=function(e,s,r,gg){
-    var oHb = e_["./page/API/pages/custom-message/custom-message.wxml"].i;_ai(oHb, '../../../common/head.wxml', e_, './page/API/pages/custom-message/custom-message.wxml', 0, 0);_ai(oHb, '../../../common/foot.wxml', e_, './page/API/pages/custom-message/custom-message.wxml', 0, 0);var oKb = _n("view");_r(oKb, 'class', 12, e, s, gg);var oLb = _v();
-       var oMb = _o(13, e, s, gg);
-       var oOb = _gd('./page/API/pages/custom-message/custom-message.wxml', oMb, e_, d_);
-       if (oOb) {
-         var oNb = _1(14,e,s,gg);
-         oOb(oNb,oNb,oLb, gg);
-       } else _w(oMb, './page/API/pages/custom-message/custom-message.wxml', 0, 0);_(oKb,oLb);var oPb = _n("view");_r(oPb, 'class', 15, e, s, gg);var oQb = _n("view");_r(oQb, 'class', 16, e, s, gg);var oRb = _n("text");_r(oRb, 'class', 17, e, s, gg);var oSb = _o(18, e, s, gg);_(oRb,oSb);_(oQb,oRb);var oTb = _n("view");_r(oTb, 'class', 19, e, s, gg);var oUb = _m( "contact-button", ["sessionFrom", 20,"size", 1], e, s, gg);_(oTb,oUb);_(oQb,oTb);_(oPb,oQb);_(oKb,oPb);var oVb = _v();
-       var oWb = _o(22, e, s, gg);
-       var oYb = _gd('./page/API/pages/custom-message/custom-message.wxml', oWb, e_, d_);
-       if (oYb) {
-         var oXb = {};
-         oYb(oXb,oXb,oVb, gg);
-       } else _w(oWb, './page/API/pages/custom-message/custom-message.wxml', 0, 0);_(oKb,oVb);_(r,oKb);oHb.pop();oHb.pop();
+    var o_a = e_["./page/API/pages/custom-message/custom-message.wxml"].i;_ai(o_a, '../../../common/head.wxml', e_, './page/API/pages/custom-message/custom-message.wxml', 0, 0);_ai(o_a, '../../../common/foot.wxml', e_, './page/API/pages/custom-message/custom-message.wxml', 0, 0);var oCb = _n("view");_r(oCb, 'class', 12, e, s, gg);var oDb = _v();
+       var oEb = _o(13, e, s, gg);
+       var oGb = _gd('./page/API/pages/custom-message/custom-message.wxml', oEb, e_, d_);
+       if (oGb) {
+         var oFb = _1(14,e,s,gg);
+         oGb(oFb,oFb,oDb, gg);
+       } else _w(oEb, './page/API/pages/custom-message/custom-message.wxml', 0, 0);_(oCb,oDb);var oHb = _n("view");_r(oHb, 'class', 15, e, s, gg);var oIb = _n("view");_r(oIb, 'class', 16, e, s, gg);var oJb = _n("text");_r(oJb, 'class', 17, e, s, gg);var oKb = _o(18, e, s, gg);_(oJb,oKb);_(oIb,oJb);var oLb = _n("view");_r(oLb, 'class', 19, e, s, gg);var oMb = _m( "contact-button", ["sessionFrom", 20,"size", 1], e, s, gg);_(oLb,oMb);_(oIb,oLb);_(oHb,oIb);_(oCb,oHb);var oNb = _v();
+       var oOb = _o(22, e, s, gg);
+       var oQb = _gd('./page/API/pages/custom-message/custom-message.wxml', oOb, e_, d_);
+       if (oQb) {
+         var oPb = {};
+         oQb(oPb,oPb,oNb, gg);
+       } else _w(oOb, './page/API/pages/custom-message/custom-message.wxml', 0, 0);_(oCb,oNb);_(r,oCb);o_a.pop();o_a.pop();
     return r;
   };
         e_["./page/API/pages/custom-message/custom-message.wxml"]={f:m2,j:[],i:[],ti:["../../../common/head.wxml","../../../common/foot.wxml"],ic:[]};

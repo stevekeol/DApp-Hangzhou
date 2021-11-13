@@ -580,7 +580,7 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/foot.wxml');return}
     p_[b]=true
     try{
-      var oICB = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var oJCB = _m( "image", ["class", 4,"src", 1], e, s, gg);_(oICB,oJCB);_(r,oICB);
+      var oIBB = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var oJBB = _m( "image", ["class", 4,"src", 1], e, s, gg);_(oIBB,oJBB);_(r,oIBB);
     }catch(err){
     p_[b]=false
     throw err
@@ -598,10 +598,10 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/head.wxml');return}
     p_[b]=true
     try{
-      var oNCB = _n("view");_r(oNCB, 'class', 6, e, s, gg);var oOCB = _n("view");_r(oOCB, 'class', 7, e, s, gg);var oPCB = _o(8, e, s, gg);_(oOCB,oPCB);_(oNCB,oOCB);var oQCB = _n("view");_r(oQCB, 'class', 9, e, s, gg);_(oNCB,oQCB);var oRCB = _v();
+      var oNBB = _n("view");_r(oNBB, 'class', 6, e, s, gg);var oOBB = _n("view");_r(oOBB, 'class', 7, e, s, gg);var oPBB = _o(8, e, s, gg);_(oOBB,oPBB);_(oNBB,oOBB);var oQBB = _n("view");_r(oQBB, 'class', 9, e, s, gg);_(oNBB,oQBB);var oRBB = _v();
       if (_o(10, e, s, gg)) {
-        oRCB.wxVkey = 1;var oSCB = _n("view");_r(oSCB, 'class', 11, e, s, gg);var oUCB = _o(10, e, s, gg);_(oSCB,oUCB);_(oRCB, oSCB);
-      } _(oNCB,oRCB);_(r,oNCB);
+        oRBB.wxVkey = 1;var oSBB = _n("view");_r(oSBB, 'class', 11, e, s, gg);var oUBB = _o(10, e, s, gg);_(oSBB,oUBB);_(oRBB, oSBB);
+      } _(oNBB,oRBB);_(r,oNBB);
     }catch(err){
     p_[b]=false
     throw err
@@ -615,19 +615,19 @@ var z = [];
   };
         e_["./page/common/head.wxml"]={f:m1,j:[],i:[],ti:[],ic:[]};d_["./page/API/pages/storage/storage.wxml"] = {};
   var m2=function(e,s,r,gg){
-    var oXCB = e_["./page/API/pages/storage/storage.wxml"].i;_ai(oXCB, '../../../common/head.wxml', e_, './page/API/pages/storage/storage.wxml', 0, 0);_ai(oXCB, '../../../common/foot.wxml', e_, './page/API/pages/storage/storage.wxml', 0, 0);var oaCB = _n("view");_r(oaCB, 'class', 12, e, s, gg);var obCB = _v();
-       var ocCB = _o(13, e, s, gg);
-       var oeCB = _gd('./page/API/pages/storage/storage.wxml', ocCB, e_, d_);
-       if (oeCB) {
-         var odCB = _1(14,e,s,gg);
-         oeCB(odCB,odCB,obCB, gg);
-       } else _w(ocCB, './page/API/pages/storage/storage.wxml', 0, 0);_(oaCB,obCB);var ofCB = _n("view");_r(ofCB, 'class', 15, e, s, gg);var ogCB = _n("view");_r(ogCB, 'class', 16, e, s, gg);var ohCB = _n("view");_r(ohCB, 'class', 17, e, s, gg);var oiCB = _n("view");_r(oiCB, 'class', 18, e, s, gg);var ojCB = _n("view");_r(ojCB, 'class', 19, e, s, gg);var okCB = _n("view");_r(okCB, 'class', 20, e, s, gg);var olCB = _o(21, e, s, gg);_(okCB,olCB);_(ojCB,okCB);_(oiCB,ojCB);var omCB = _n("view");_r(omCB, 'class', 22, e, s, gg);var onCB = _m( "input", ["name", 21,"bindinput", 2,"class", 3,"placeholder", 4,"type", 5,"value", 6], e, s, gg);_(omCB,onCB);_(oiCB,omCB);_(ohCB,oiCB);var ooCB = _n("view");_r(ooCB, 'class', 18, e, s, gg);var opCB = _n("view");_r(opCB, 'class', 19, e, s, gg);var oqCB = _n("view");_r(oqCB, 'class', 20, e, s, gg);var orCB = _o(28, e, s, gg);_(oqCB,orCB);_(opCB,oqCB);_(ooCB,opCB);var osCB = _n("view");_r(osCB, 'class', 22, e, s, gg);var otCB = _m( "input", ["class", 24,"type", 2,"bindinput", 5,"name", 6,"placeholder", 7,"value", 8], e, s, gg);_(osCB,otCB);_(ooCB,osCB);_(ohCB,ooCB);_(ogCB,ohCB);var ouCB = _n("view");_r(ouCB, 'class', 33, e, s, gg);var ovCB = _m( "button", ["bindtap", 34,"type", 1], e, s, gg);var owCB = _o(36, e, s, gg);_(ovCB,owCB);_(ouCB,ovCB);var oxCB = _n("button");_r(oxCB, 'bindtap', 37, e, s, gg);var oyCB = _o(38, e, s, gg);_(oxCB,oyCB);_(ouCB,oxCB);var ozCB = _n("button");_r(ozCB, 'bindtap', 39, e, s, gg);var o_CB = _o(40, e, s, gg);_(ozCB,o_CB);_(ouCB,ozCB);_(ogCB,ouCB);_(ofCB,ogCB);_(oaCB,ofCB);var oADB = _m( "modal", ["noCancel", -1,"bindconfirm", 41,"hidden", 1,"title", 2], e, s, gg);var oBDB = _o(44, e, s, gg);_(oADB,oBDB);_(oaCB,oADB);var oCDB = _v();
-       var oDDB = _o(45, e, s, gg);
-       var oFDB = _gd('./page/API/pages/storage/storage.wxml', oDDB, e_, d_);
-       if (oFDB) {
-         var oEDB = {};
-         oFDB(oEDB,oEDB,oCDB, gg);
-       } else _w(oDDB, './page/API/pages/storage/storage.wxml', 0, 0);_(oaCB,oCDB);_(r,oaCB);oXCB.pop();oXCB.pop();
+    var oXBB = e_["./page/API/pages/storage/storage.wxml"].i;_ai(oXBB, '../../../common/head.wxml', e_, './page/API/pages/storage/storage.wxml', 0, 0);_ai(oXBB, '../../../common/foot.wxml', e_, './page/API/pages/storage/storage.wxml', 0, 0);var oaBB = _n("view");_r(oaBB, 'class', 12, e, s, gg);var obBB = _v();
+       var ocBB = _o(13, e, s, gg);
+       var oeBB = _gd('./page/API/pages/storage/storage.wxml', ocBB, e_, d_);
+       if (oeBB) {
+         var odBB = _1(14,e,s,gg);
+         oeBB(odBB,odBB,obBB, gg);
+       } else _w(ocBB, './page/API/pages/storage/storage.wxml', 0, 0);_(oaBB,obBB);var ofBB = _n("view");_r(ofBB, 'class', 15, e, s, gg);var ogBB = _n("view");_r(ogBB, 'class', 16, e, s, gg);var ohBB = _n("view");_r(ohBB, 'class', 17, e, s, gg);var oiBB = _n("view");_r(oiBB, 'class', 18, e, s, gg);var ojBB = _n("view");_r(ojBB, 'class', 19, e, s, gg);var okBB = _n("view");_r(okBB, 'class', 20, e, s, gg);var olBB = _o(21, e, s, gg);_(okBB,olBB);_(ojBB,okBB);_(oiBB,ojBB);var omBB = _n("view");_r(omBB, 'class', 22, e, s, gg);var onBB = _m( "input", ["name", 21,"bindinput", 2,"class", 3,"placeholder", 4,"type", 5,"value", 6], e, s, gg);_(omBB,onBB);_(oiBB,omBB);_(ohBB,oiBB);var ooBB = _n("view");_r(ooBB, 'class', 18, e, s, gg);var opBB = _n("view");_r(opBB, 'class', 19, e, s, gg);var oqBB = _n("view");_r(oqBB, 'class', 20, e, s, gg);var orBB = _o(28, e, s, gg);_(oqBB,orBB);_(opBB,oqBB);_(ooBB,opBB);var osBB = _n("view");_r(osBB, 'class', 22, e, s, gg);var otBB = _m( "input", ["class", 24,"type", 2,"bindinput", 5,"name", 6,"placeholder", 7,"value", 8], e, s, gg);_(osBB,otBB);_(ooBB,osBB);_(ohBB,ooBB);_(ogBB,ohBB);var ouBB = _n("view");_r(ouBB, 'class', 33, e, s, gg);var ovBB = _m( "button", ["bindtap", 34,"type", 1], e, s, gg);var owBB = _o(36, e, s, gg);_(ovBB,owBB);_(ouBB,ovBB);var oxBB = _n("button");_r(oxBB, 'bindtap', 37, e, s, gg);var oyBB = _o(38, e, s, gg);_(oxBB,oyBB);_(ouBB,oxBB);var ozBB = _n("button");_r(ozBB, 'bindtap', 39, e, s, gg);var o_BB = _o(40, e, s, gg);_(ozBB,o_BB);_(ouBB,ozBB);_(ogBB,ouBB);_(ofBB,ogBB);_(oaBB,ofBB);var oACB = _m( "modal", ["noCancel", -1,"bindconfirm", 41,"hidden", 1,"title", 2], e, s, gg);var oBCB = _o(44, e, s, gg);_(oACB,oBCB);_(oaBB,oACB);var oCCB = _v();
+       var oDCB = _o(45, e, s, gg);
+       var oFCB = _gd('./page/API/pages/storage/storage.wxml', oDCB, e_, d_);
+       if (oFCB) {
+         var oECB = {};
+         oFCB(oECB,oECB,oCCB, gg);
+       } else _w(oDCB, './page/API/pages/storage/storage.wxml', 0, 0);_(oaBB,oCCB);_(r,oaBB);oXBB.pop();oXBB.pop();
     return r;
   };
         e_["./page/API/pages/storage/storage.wxml"]={f:m2,j:[],i:[],ti:["../../../common/head.wxml","../../../common/foot.wxml"],ic:[]};

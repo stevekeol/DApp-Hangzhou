@@ -580,7 +580,7 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/foot.wxml');return}
     p_[b]=true
     try{
-      var oNs = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var oOs = _m( "image", ["class", 4,"src", 1], e, s, gg);_(oNs,oOs);_(r,oNs);
+      var omt = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var ont = _m( "image", ["class", 4,"src", 1], e, s, gg);_(omt,ont);_(r,omt);
     }catch(err){
     p_[b]=false
     throw err
@@ -598,10 +598,10 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/head.wxml');return}
     p_[b]=true
     try{
-      var oSs = _n("view");_r(oSs, 'class', 6, e, s, gg);var oTs = _n("view");_r(oTs, 'class', 7, e, s, gg);var oUs = _o(8, e, s, gg);_(oTs,oUs);_(oSs,oTs);var oVs = _n("view");_r(oVs, 'class', 9, e, s, gg);_(oSs,oVs);var oWs = _v();
+      var ort = _n("view");_r(ort, 'class', 6, e, s, gg);var ost = _n("view");_r(ost, 'class', 7, e, s, gg);var ott = _o(8, e, s, gg);_(ost,ott);_(ort,ost);var out = _n("view");_r(out, 'class', 9, e, s, gg);_(ort,out);var ovt = _v();
       if (_o(10, e, s, gg)) {
-        oWs.wxVkey = 1;var oXs = _n("view");_r(oXs, 'class', 11, e, s, gg);var oZs = _o(10, e, s, gg);_(oXs,oZs);_(oWs, oXs);
-      } _(oSs,oWs);_(r,oSs);
+        ovt.wxVkey = 1;var owt = _n("view");_r(owt, 'class', 11, e, s, gg);var oyt = _o(10, e, s, gg);_(owt,oyt);_(ovt, owt);
+      } _(ort,ovt);_(r,ort);
     }catch(err){
     p_[b]=false
     throw err
@@ -615,31 +615,31 @@ var z = [];
   };
         e_["./page/common/head.wxml"]={f:m1,j:[],i:[],ti:[],ic:[]};d_["./page/API/pages/voice/voice.wxml"] = {};
   var m2=function(e,s,r,gg){
-    var ocs = e_["./page/API/pages/voice/voice.wxml"].i;_ai(ocs, '../../../common/head.wxml', e_, './page/API/pages/voice/voice.wxml', 0, 0);_ai(ocs, '../../../common/foot.wxml', e_, './page/API/pages/voice/voice.wxml', 0, 0);var ofs = _n("view");_r(ofs, 'class', 12, e, s, gg);var ogs = _v();
-       var ohs = _o(13, e, s, gg);
-       var ojs = _gd('./page/API/pages/voice/voice.wxml', ohs, e_, d_);
-       if (ojs) {
-         var ois = _1(14,e,s,gg);
-         ojs(ois,ois,ogs, gg);
-       } else _w(ohs, './page/API/pages/voice/voice.wxml', 0, 0);_(ofs,ogs);var oks = _n("view");_r(oks, 'class', 15, e, s, gg);var ols = _n("view");_r(ols, 'class', 16, e, s, gg);var oms = _v();
+    var oAu = e_["./page/API/pages/voice/voice.wxml"].i;_ai(oAu, '../../../common/head.wxml', e_, './page/API/pages/voice/voice.wxml', 0, 0);_ai(oAu, '../../../common/foot.wxml', e_, './page/API/pages/voice/voice.wxml', 0, 0);var oDu = _n("view");_r(oDu, 'class', 12, e, s, gg);var oEu = _v();
+       var oFu = _o(13, e, s, gg);
+       var oHu = _gd('./page/API/pages/voice/voice.wxml', oFu, e_, d_);
+       if (oHu) {
+         var oGu = _1(14,e,s,gg);
+         oHu(oGu,oGu,oEu, gg);
+       } else _w(oFu, './page/API/pages/voice/voice.wxml', 0, 0);_(oDu,oEu);var oIu = _n("view");_r(oIu, 'class', 15, e, s, gg);var oJu = _n("view");_r(oJu, 'class', 16, e, s, gg);var oKu = _v();
       if (_o(17, e, s, gg)) {
-        oms.wxVkey = 1;var ops = _n("view");_r(ops, 'class', 18, e, s, gg);var oqs = _n("text");_r(oqs, 'class', 19, e, s, gg);var ors = _o(20, e, s, gg);_(oqs,ors);_(ops,oqs);_(oms,ops);var oss = _n("view");_r(oss, 'class', 21, e, s, gg);var ots = _n("view");_r(ots, 'class', 22, e, s, gg);_(oss,ots);var ous = _m( "view", ["class", 22,"bindtap", 1], e, s, gg);var ovs = _n("image");_r(ovs, 'src', 24, e, s, gg);_(ous,ovs);_(oss,ous);var ows = _n("view");_r(ows, 'class', 22, e, s, gg);_(oss,ows);_(oms,oss);
-      } _(ols,oms);var oxs = _v();
+        oKu.wxVkey = 1;var oNu = _n("view");_r(oNu, 'class', 18, e, s, gg);var oOu = _n("text");_r(oOu, 'class', 19, e, s, gg);var oPu = _o(20, e, s, gg);_(oOu,oPu);_(oNu,oOu);_(oKu,oNu);var oQu = _n("view");_r(oQu, 'class', 21, e, s, gg);var oRu = _n("view");_r(oRu, 'class', 22, e, s, gg);_(oQu,oRu);var oSu = _m( "view", ["class", 22,"bindtap", 1], e, s, gg);var oTu = _n("image");_r(oTu, 'src', 24, e, s, gg);_(oSu,oTu);_(oQu,oSu);var oUu = _n("view");_r(oUu, 'class', 22, e, s, gg);_(oQu,oUu);_(oKu,oQu);
+      } _(oJu,oKu);var oVu = _v();
       if (_o(25, e, s, gg)) {
-        oxs.wxVkey = 1;var o_s = _n("view");_r(o_s, 'class', 18, e, s, gg);var oAt = _n("text");_r(oAt, 'class', 19, e, s, gg);var oBt = _o(20, e, s, gg);_(oAt,oBt);_(o_s,oAt);_(oxs,o_s);var oCt = _n("view");_r(oCt, 'class', 21, e, s, gg);var oDt = _n("view");_r(oDt, 'class', 22, e, s, gg);_(oCt,oDt);var oEt = _m( "view", ["class", 22,"bindtap", 4], e, s, gg);var oFt = _n("view");_r(oFt, 'class', 27, e, s, gg);_(oEt,oFt);_(oCt,oEt);var oGt = _n("view");_r(oGt, 'class', 22, e, s, gg);_(oCt,oGt);_(oxs,oCt);
-      } _(ols,oxs);var oHt = _v();
+        oVu.wxVkey = 1;var oYu = _n("view");_r(oYu, 'class', 18, e, s, gg);var oZu = _n("text");_r(oZu, 'class', 19, e, s, gg);var oau = _o(20, e, s, gg);_(oZu,oau);_(oYu,oZu);_(oVu,oYu);var obu = _n("view");_r(obu, 'class', 21, e, s, gg);var ocu = _n("view");_r(ocu, 'class', 22, e, s, gg);_(obu,ocu);var odu = _m( "view", ["class", 22,"bindtap", 4], e, s, gg);var oeu = _n("view");_r(oeu, 'class', 27, e, s, gg);_(odu,oeu);_(obu,odu);var ofu = _n("view");_r(ofu, 'class', 22, e, s, gg);_(obu,ofu);_(oVu,obu);
+      } _(oJu,oVu);var ogu = _v();
       if (_o(28, e, s, gg)) {
-        oHt.wxVkey = 1;var oKt = _n("view");_r(oKt, 'class', 18, e, s, gg);var oLt = _n("text");_r(oLt, 'class', 19, e, s, gg);var oMt = _o(29, e, s, gg);_(oLt,oMt);_(oKt,oLt);var oNt = _n("text");_r(oNt, 'class', 30, e, s, gg);var oOt = _o(20, e, s, gg);_(oNt,oOt);_(oKt,oNt);_(oHt,oKt);var oPt = _n("view");_r(oPt, 'class', 21, e, s, gg);var oQt = _n("view");_r(oQt, 'class', 22, e, s, gg);_(oPt,oQt);var oRt = _m( "view", ["class", 22,"bindtap", 9], e, s, gg);var oSt = _n("image");_r(oSt, 'src', 32, e, s, gg);_(oRt,oSt);_(oPt,oRt);var oTt = _m( "view", ["class", 22,"bindtap", 11], e, s, gg);var oUt = _n("image");_r(oUt, 'src', 34, e, s, gg);_(oTt,oUt);_(oPt,oTt);_(oHt,oPt);
-      } _(ols,oHt);var oVt = _v();
+        ogu.wxVkey = 1;var oju = _n("view");_r(oju, 'class', 18, e, s, gg);var oku = _n("text");_r(oku, 'class', 19, e, s, gg);var olu = _o(29, e, s, gg);_(oku,olu);_(oju,oku);var omu = _n("text");_r(omu, 'class', 30, e, s, gg);var onu = _o(20, e, s, gg);_(omu,onu);_(oju,omu);_(ogu,oju);var oou = _n("view");_r(oou, 'class', 21, e, s, gg);var opu = _n("view");_r(opu, 'class', 22, e, s, gg);_(oou,opu);var oqu = _m( "view", ["class", 22,"bindtap", 9], e, s, gg);var oru = _n("image");_r(oru, 'src', 32, e, s, gg);_(oqu,oru);_(oou,oqu);var osu = _m( "view", ["class", 22,"bindtap", 11], e, s, gg);var otu = _n("image");_r(otu, 'src', 34, e, s, gg);_(osu,otu);_(oou,osu);_(ogu,oou);
+      } _(oJu,ogu);var ouu = _v();
       if (_o(35, e, s, gg)) {
-        oVt.wxVkey = 1;var oYt = _n("view");_r(oYt, 'class', 18, e, s, gg);var oZt = _n("text");_r(oZt, 'class', 19, e, s, gg);var oat = _o(29, e, s, gg);_(oZt,oat);_(oYt,oZt);var obt = _n("text");_r(obt, 'class', 30, e, s, gg);var oct = _o(20, e, s, gg);_(obt,oct);_(oYt,obt);_(oVt,oYt);var odt = _n("view");_r(odt, 'class', 21, e, s, gg);var oet = _m( "view", ["class", 22,"bindtap", 14], e, s, gg);var oft = _n("image");_r(oft, 'src', 37, e, s, gg);_(oet,oft);_(odt,oet);var ogt = _m( "view", ["class", 22,"bindtap", 11], e, s, gg);var oht = _n("image");_r(oht, 'src', 34, e, s, gg);_(ogt,oht);_(odt,ogt);_(oVt,odt);
-      } _(ols,oVt);_(oks,ols);_(ofs,oks);var oit = _v();
-       var ojt = _o(38, e, s, gg);
-       var olt = _gd('./page/API/pages/voice/voice.wxml', ojt, e_, d_);
-       if (olt) {
-         var okt = {};
-         olt(okt,okt,oit, gg);
-       } else _w(ojt, './page/API/pages/voice/voice.wxml', 0, 0);_(ofs,oit);_(r,ofs);ocs.pop();ocs.pop();
+        ouu.wxVkey = 1;var oxu = _n("view");_r(oxu, 'class', 18, e, s, gg);var oyu = _n("text");_r(oyu, 'class', 19, e, s, gg);var ozu = _o(29, e, s, gg);_(oyu,ozu);_(oxu,oyu);var o_u = _n("text");_r(o_u, 'class', 30, e, s, gg);var oAv = _o(20, e, s, gg);_(o_u,oAv);_(oxu,o_u);_(ouu,oxu);var oBv = _n("view");_r(oBv, 'class', 21, e, s, gg);var oCv = _m( "view", ["class", 22,"bindtap", 14], e, s, gg);var oDv = _n("image");_r(oDv, 'src', 37, e, s, gg);_(oCv,oDv);_(oBv,oCv);var oEv = _m( "view", ["class", 22,"bindtap", 11], e, s, gg);var oFv = _n("image");_r(oFv, 'src', 34, e, s, gg);_(oEv,oFv);_(oBv,oEv);_(ouu,oBv);
+      } _(oJu,ouu);_(oIu,oJu);_(oDu,oIu);var oGv = _v();
+       var oHv = _o(38, e, s, gg);
+       var oJv = _gd('./page/API/pages/voice/voice.wxml', oHv, e_, d_);
+       if (oJv) {
+         var oIv = {};
+         oJv(oIv,oIv,oGv, gg);
+       } else _w(oHv, './page/API/pages/voice/voice.wxml', 0, 0);_(oDu,oGv);_(r,oDu);oAu.pop();oAu.pop();
     return r;
   };
         e_["./page/API/pages/voice/voice.wxml"]={f:m2,j:[],i:[],ti:["../../../common/head.wxml","../../../common/foot.wxml"],ic:[]};

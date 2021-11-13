@@ -580,7 +580,7 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/foot.wxml');return}
     p_[b]=true
     try{
-      var ojf = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var okf = _m( "image", ["class", 4,"src", 1], e, s, gg);_(ojf,okf);_(r,ojf);
+      var oBf = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var oCf = _m( "image", ["class", 4,"src", 1], e, s, gg);_(oBf,oCf);_(r,oBf);
     }catch(err){
     p_[b]=false
     throw err
@@ -598,10 +598,10 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/head.wxml');return}
     p_[b]=true
     try{
-      var oof = _n("view");_r(oof, 'class', 6, e, s, gg);var opf = _n("view");_r(opf, 'class', 7, e, s, gg);var oqf = _o(8, e, s, gg);_(opf,oqf);_(oof,opf);var orf = _n("view");_r(orf, 'class', 9, e, s, gg);_(oof,orf);var osf = _v();
+      var oGf = _n("view");_r(oGf, 'class', 6, e, s, gg);var oHf = _n("view");_r(oHf, 'class', 7, e, s, gg);var oIf = _o(8, e, s, gg);_(oHf,oIf);_(oGf,oHf);var oJf = _n("view");_r(oJf, 'class', 9, e, s, gg);_(oGf,oJf);var oKf = _v();
       if (_o(10, e, s, gg)) {
-        osf.wxVkey = 1;var otf = _n("view");_r(otf, 'class', 11, e, s, gg);var ovf = _o(10, e, s, gg);_(otf,ovf);_(osf, otf);
-      } _(oof,osf);_(r,oof);
+        oKf.wxVkey = 1;var oLf = _n("view");_r(oLf, 'class', 11, e, s, gg);var oNf = _o(10, e, s, gg);_(oLf,oNf);_(oKf, oLf);
+      } _(oGf,oKf);_(r,oGf);
     }catch(err){
     p_[b]=false
     throw err
@@ -615,19 +615,19 @@ var z = [];
   };
         e_["./page/common/head.wxml"]={f:m1,j:[],i:[],ti:[],ic:[]};d_["./page/API/pages/navigator/navigator.wxml"] = {};
   var m2=function(e,s,r,gg){
-    var oyf = e_["./page/API/pages/navigator/navigator.wxml"].i;_ai(oyf, '../../../common/head.wxml', e_, './page/API/pages/navigator/navigator.wxml', 0, 0);_ai(oyf, '../../../common/foot.wxml', e_, './page/API/pages/navigator/navigator.wxml', 0, 0);var oAg = _n("view");_r(oAg, 'class', 12, e, s, gg);var oBg = _v();
-       var oCg = _o(13, e, s, gg);
-       var oEg = _gd('./page/API/pages/navigator/navigator.wxml', oCg, e_, d_);
-       if (oEg) {
-         var oDg = _1(14,e,s,gg);
-         oEg(oDg,oDg,oBg, gg);
-       } else _w(oCg, './page/API/pages/navigator/navigator.wxml', 0, 0);_(oAg,oBg);var oFg = _n("view");_r(oFg, 'class', 15, e, s, gg);var oGg = _n("view");_r(oGg, 'class', 16, e, s, gg);var oHg = _n("button");_r(oHg, 'bindtap', 17, e, s, gg);var oIg = _o(18, e, s, gg);_(oHg,oIg);_(oGg,oHg);var oJg = _n("button");_r(oJg, 'bindtap', 19, e, s, gg);var oKg = _o(20, e, s, gg);_(oJg,oKg);_(oGg,oJg);var oLg = _n("button");_r(oLg, 'bindtap', 21, e, s, gg);var oMg = _o(22, e, s, gg);_(oLg,oMg);_(oGg,oLg);_(oFg,oGg);_(oAg,oFg);var oNg = _v();
-       var oOg = _o(23, e, s, gg);
-       var oQg = _gd('./page/API/pages/navigator/navigator.wxml', oOg, e_, d_);
-       if (oQg) {
-         var oPg = {};
-         oQg(oPg,oPg,oNg, gg);
-       } else _w(oOg, './page/API/pages/navigator/navigator.wxml', 0, 0);_(oAg,oNg);_(r,oAg);oyf.pop();oyf.pop();
+    var oQf = e_["./page/API/pages/navigator/navigator.wxml"].i;_ai(oQf, '../../../common/head.wxml', e_, './page/API/pages/navigator/navigator.wxml', 0, 0);_ai(oQf, '../../../common/foot.wxml', e_, './page/API/pages/navigator/navigator.wxml', 0, 0);var oTf = _n("view");_r(oTf, 'class', 12, e, s, gg);var oUf = _v();
+       var oVf = _o(13, e, s, gg);
+       var oXf = _gd('./page/API/pages/navigator/navigator.wxml', oVf, e_, d_);
+       if (oXf) {
+         var oWf = _1(14,e,s,gg);
+         oXf(oWf,oWf,oUf, gg);
+       } else _w(oVf, './page/API/pages/navigator/navigator.wxml', 0, 0);_(oTf,oUf);var oYf = _n("view");_r(oYf, 'class', 15, e, s, gg);var oZf = _n("view");_r(oZf, 'class', 16, e, s, gg);var oaf = _n("button");_r(oaf, 'bindtap', 17, e, s, gg);var obf = _o(18, e, s, gg);_(oaf,obf);_(oZf,oaf);var ocf = _n("button");_r(ocf, 'bindtap', 19, e, s, gg);var odf = _o(20, e, s, gg);_(ocf,odf);_(oZf,ocf);var oef = _n("button");_r(oef, 'bindtap', 21, e, s, gg);var off = _o(22, e, s, gg);_(oef,off);_(oZf,oef);_(oYf,oZf);_(oTf,oYf);var ogf = _v();
+       var ohf = _o(23, e, s, gg);
+       var ojf = _gd('./page/API/pages/navigator/navigator.wxml', ohf, e_, d_);
+       if (ojf) {
+         var oif = {};
+         ojf(oif,oif,ogf, gg);
+       } else _w(ohf, './page/API/pages/navigator/navigator.wxml', 0, 0);_(oTf,ogf);_(r,oTf);oQf.pop();oQf.pop();
     return r;
   };
         e_["./page/API/pages/navigator/navigator.wxml"]={f:m2,j:[],i:[],ti:["../../../common/head.wxml","../../../common/foot.wxml"],ic:[]};

@@ -580,7 +580,7 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/foot.wxml');return}
     p_[b]=true
     try{
-      var oHZ = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var oIZ = _m( "image", ["class", 4,"src", 1], e, s, gg);_(oHZ,oIZ);_(r,oHZ);
+      var ozZ = _m( "navigator", ["class", 0,"hoverClass", 1,"openType", 1,"url", 2], e, s, gg);var o_Z = _m( "image", ["class", 4,"src", 1], e, s, gg);_(ozZ,o_Z);_(r,ozZ);
     }catch(err){
     p_[b]=false
     throw err
@@ -598,10 +598,10 @@ var z = [];
     if(p_[b]){_wl(b,'./page/common/head.wxml');return}
     p_[b]=true
     try{
-      var oMZ = _n("view");_r(oMZ, 'class', 6, e, s, gg);var oNZ = _n("view");_r(oNZ, 'class', 7, e, s, gg);var oOZ = _o(8, e, s, gg);_(oNZ,oOZ);_(oMZ,oNZ);var oPZ = _n("view");_r(oPZ, 'class', 9, e, s, gg);_(oMZ,oPZ);var oQZ = _v();
+      var oDa = _n("view");_r(oDa, 'class', 6, e, s, gg);var oEa = _n("view");_r(oEa, 'class', 7, e, s, gg);var oFa = _o(8, e, s, gg);_(oEa,oFa);_(oDa,oEa);var oGa = _n("view");_r(oGa, 'class', 9, e, s, gg);_(oDa,oGa);var oHa = _v();
       if (_o(10, e, s, gg)) {
-        oQZ.wxVkey = 1;var oRZ = _n("view");_r(oRZ, 'class', 11, e, s, gg);var oTZ = _o(10, e, s, gg);_(oRZ,oTZ);_(oQZ, oRZ);
-      } _(oMZ,oQZ);_(r,oMZ);
+        oHa.wxVkey = 1;var oIa = _n("view");_r(oIa, 'class', 11, e, s, gg);var oKa = _o(10, e, s, gg);_(oIa,oKa);_(oHa, oIa);
+      } _(oDa,oHa);_(r,oDa);
     }catch(err){
     p_[b]=false
     throw err
@@ -615,19 +615,19 @@ var z = [];
   };
         e_["./page/common/head.wxml"]={f:m1,j:[],i:[],ti:[],ic:[]};d_["./page/API/pages/request-payment/request-payment.wxml"] = {};
   var m2=function(e,s,r,gg){
-    var oWZ = e_["./page/API/pages/request-payment/request-payment.wxml"].i;_ai(oWZ, '../../../common/head.wxml', e_, './page/API/pages/request-payment/request-payment.wxml', 0, 0);_ai(oWZ, '../../../common/foot.wxml', e_, './page/API/pages/request-payment/request-payment.wxml', 0, 0);var oZZ = _n("view");_r(oZZ, 'class', 12, e, s, gg);var oaZ = _v();
-       var obZ = _o(13, e, s, gg);
-       var odZ = _gd('./page/API/pages/request-payment/request-payment.wxml', obZ, e_, d_);
-       if (odZ) {
-         var ocZ = _1(14,e,s,gg);
-         odZ(ocZ,ocZ,oaZ, gg);
-       } else _w(obZ, './page/API/pages/request-payment/request-payment.wxml', 0, 0);_(oZZ,oaZ);var oeZ = _n("view");_r(oeZ, 'class', 15, e, s, gg);var ofZ = _n("view");_r(ofZ, 'class', 16, e, s, gg);var ogZ = _n("view");var ohZ = _o(17, e, s, gg);_(ogZ,ohZ);_(ofZ,ogZ);var oiZ = _n("view");_r(oiZ, 'class', 18, e, s, gg);var ojZ = _o(19, e, s, gg);_(oiZ,ojZ);_(ofZ,oiZ);var okZ = _n("view");_r(okZ, 'class', 20, e, s, gg);var olZ = _o(21, e, s, gg);_(okZ,olZ);_(ofZ,okZ);var omZ = _n("view");_r(omZ, 'class', 22, e, s, gg);var onZ = _m( "button", ["bindtap", 23,"loading", 1,"type", 2], e, s, gg);var ooZ = _o(26, e, s, gg);_(onZ,ooZ);_(omZ,onZ);_(ofZ,omZ);_(oeZ,ofZ);_(oZZ,oeZ);var opZ = _v();
-       var oqZ = _o(27, e, s, gg);
-       var osZ = _gd('./page/API/pages/request-payment/request-payment.wxml', oqZ, e_, d_);
-       if (osZ) {
-         var orZ = {};
-         osZ(orZ,orZ,opZ, gg);
-       } else _w(oqZ, './page/API/pages/request-payment/request-payment.wxml', 0, 0);_(oZZ,opZ);_(r,oZZ);oWZ.pop();oWZ.pop();
+    var oNa = e_["./page/API/pages/request-payment/request-payment.wxml"].i;_ai(oNa, '../../../common/head.wxml', e_, './page/API/pages/request-payment/request-payment.wxml', 0, 0);_ai(oNa, '../../../common/foot.wxml', e_, './page/API/pages/request-payment/request-payment.wxml', 0, 0);var oQa = _n("view");_r(oQa, 'class', 12, e, s, gg);var oRa = _v();
+       var oSa = _o(13, e, s, gg);
+       var oUa = _gd('./page/API/pages/request-payment/request-payment.wxml', oSa, e_, d_);
+       if (oUa) {
+         var oTa = _1(14,e,s,gg);
+         oUa(oTa,oTa,oRa, gg);
+       } else _w(oSa, './page/API/pages/request-payment/request-payment.wxml', 0, 0);_(oQa,oRa);var oVa = _n("view");_r(oVa, 'class', 15, e, s, gg);var oWa = _n("view");_r(oWa, 'class', 16, e, s, gg);var oXa = _n("view");var oYa = _o(17, e, s, gg);_(oXa,oYa);_(oWa,oXa);var oZa = _n("view");_r(oZa, 'class', 18, e, s, gg);var oaa = _o(19, e, s, gg);_(oZa,oaa);_(oWa,oZa);var oba = _n("view");_r(oba, 'class', 20, e, s, gg);var oca = _o(21, e, s, gg);_(oba,oca);_(oWa,oba);var oda = _n("view");_r(oda, 'class', 22, e, s, gg);var oea = _m( "button", ["bindtap", 23,"loading", 1,"type", 2], e, s, gg);var ofa = _o(26, e, s, gg);_(oea,ofa);_(oda,oea);_(oWa,oda);_(oVa,oWa);_(oQa,oVa);var oga = _v();
+       var oha = _o(27, e, s, gg);
+       var oja = _gd('./page/API/pages/request-payment/request-payment.wxml', oha, e_, d_);
+       if (oja) {
+         var oia = {};
+         oja(oia,oia,oga, gg);
+       } else _w(oha, './page/API/pages/request-payment/request-payment.wxml', 0, 0);_(oQa,oga);_(r,oQa);oNa.pop();oNa.pop();
     return r;
   };
         e_["./page/API/pages/request-payment/request-payment.wxml"]={f:m2,j:[],i:[],ti:["../../../common/head.wxml","../../../common/foot.wxml"],ic:[]};
