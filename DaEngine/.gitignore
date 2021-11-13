@@ -7,7 +7,7 @@ node_modules
 build/
 
 # dist files
-wewebTmp/
+DaEngineTmp/
 tmp
 logs
 lib/template/assets/css/weweb.min.css

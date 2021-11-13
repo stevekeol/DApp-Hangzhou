@@ -34,13 +34,13 @@ if (isWin) {
 program
   .version(json.version)
   .usage('[options] <appRoot>')
-  .option('-b, --babel', '对小程序源码采用babel转换')
+  .option('-b, --babel', '对DApp源码采用babel转换')
   .option('-d, --dist <p>', '指定生成的路径')
   .option('-l, --list', '使用默认浏览器打开更新历史')
   .option('-n, --nocheck', '不检查更新')
-  .option('-o, --open', '使用 Chrome 打开小程序，仅对 Mac 有效')
+  .option('-o, --open', '使用 Chrome 打开DApp，仅对 Mac 有效')
   .option('-p, --port <n>', '指定服务端口，默认 3000', parseInt)
-  .option('-t, --transform', '只转换小程序,不起web服务')
+  .option('-t, --transform', '只转换DApp,不起web服务')
 
 program.parse(process.argv)
 
@@ -141,7 +141,7 @@ function checkProject() {
 }
 
 // 开始转换代码
-let distPath = path.resolve(curPath, program.dist || './wewebTmp/dist')
+let distPath = path.resolve(curPath, program.dist || './DaEngineTemp/dist')
 
 /**
  *   记录构建时间

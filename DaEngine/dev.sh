@@ -10,3 +10,5 @@ if [ "$1" != "dev" ]; then
 fi
 
 ./bin/DaEngine -b $app # 2 将demo_dapp按内部规则编译后，结合lib/templates/assets/scripts中的js文件，生成wewebTemp的最终文件。
+
+# ? ./bin/DaEngine.js在何时取出lib/templates/assets/scripts中的文件？
