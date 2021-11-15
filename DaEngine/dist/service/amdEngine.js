@@ -3,8 +3,7 @@
  * amd(Asynchronous Module Definition)，即异步模块加载机制
  *
  * @TODO
- * 1. "Error: module config is not defined"
- * 2.
+ * 1. 运行中，首页面就会报错： "Error: module config is not defined"
  *
  ****************************************************/
 // import 
@@ -61,7 +60,7 @@ var getPathPrefix = function (path) {
     return res && res[1] ? res[1] : './';
 };
 /**
- *
+ * 给出一个路径，取出该路径下对应的函数代码体
  * @type {[type]}
  */
 var getRequireFun = function (pathname) {
@@ -102,7 +101,6 @@ var getRequireFun = function (pathname) {
 };
 export { require, define };
 window.define = define;
-// (window as Window).require = require;
 window.require = require;
 // da.version = {
 //   updateTime: '2021-11-11 10:00',

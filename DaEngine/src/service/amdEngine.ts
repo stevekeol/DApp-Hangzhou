@@ -50,7 +50,9 @@ const define = (path: String, fun: Function): void => {
  * 引入一个模块
  * @type {[type]}
  */
-const require = (path: String): Object | undefined => {
+const require = (path: string): Object | undefined => {
+  // 当使用诸如require('config')而非require('config.js')时的兜底处理
+  path = /\.js$/.test(path) ? path : `${path}.js`;
   const moduleObj = moduleMap.get(path);
   if (!moduleObj) throw new Error(`module ${path} is not defined`);
 
@@ -81,7 +83,7 @@ const getPathPrefix = (path: String): String => {
 }
 
 /**
- * 
+ * 给出一个路径，取出该路径下对应的函数代码体
  * @type {[type]}
  */
 const getRequireFun = (pathname: String) => {
@@ -89,11 +91,11 @@ const getRequireFun = (pathname: String) => {
     if (typeof path !== 'string') {
       throw new Error('require args must be a string')
     }
-    var floderArr = []
-    var folders: string[] = (getPathPrefix(pathname) + '/' + path).split('/')
-    var pathLength = folders.length
-    for (var i = 0; i < pathLength; ++i) {
-      var folder = folders[i]
+    let floderArr = []
+    let folders: string[] = (getPathPrefix(pathname) + '/' + path).split('/')
+    let pathLength = folders.length
+    for (let i = 0; i < pathLength; ++i) {
+      let folder = folders[i]
       if (folder != '' && folder != '.') {
         if (folder == '..') {
           if (floderArr.length == 0) {
@@ -108,7 +110,7 @@ const getRequireFun = (pathname: String) => {
       }
     }
     try {
-      var _pathname = floderArr.join('/')
+      let _pathname = floderArr.join('/')
       if (!/\.js$/.test(_pathname)) {
         pathname += '.js' //@TODO tofixed
       }
