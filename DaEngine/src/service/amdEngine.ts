@@ -1,9 +1,12 @@
 /*****************************************************
  * 
  * amd(Asynchronous Module Definition)，即异步模块加载机制
+ *
+ * @TODO
+ * 1. 运行中，首页面就会报错： "Error: module config is not defined"
  * 
  ****************************************************/
-
+// import 
 
 interface Imodule {
   status: Flag,
@@ -11,16 +14,12 @@ interface Imodule {
   exports?: Object // 该模块假如已经被require过，则该属性上挂载对应的模块代码，以节省重复计算的开销
 }
 
-// interface IfactoryFun {
-
-// }
-
 /**
  * 在全局对象window上挂载require和define
  */
 declare global {
   interface Window {
-    require: () => any,
+    require: Function,
     define: Function
   }
 }
@@ -123,13 +122,9 @@ const getRequireFun = (pathname: String) => {
 
 export { require, define }
 
-interface Iwindow {
-  define: Function,
-  require: Function
-}
-
 window.define = define;
-window.require = require;
+(window as Window).require = require;
+
 // da.version = {
 //   updateTime: '2021-11-11 10:00',
 //   info: 'Demo 验证',

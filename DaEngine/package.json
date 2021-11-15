@@ -65,7 +65,7 @@
     "wxss-transpiler": "^1.0.6"
   },
   "devDependencies": {
-    "@types/node": "^16.11.2",
+    "@types/node": "^16.11.7",
     "actionsheet": "^0.1.2",
     "autoscale-canvas": "0.0.3",
     "babel-loader": "^7.1.4",

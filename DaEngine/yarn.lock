@@ -147,7 +147,7 @@
   "resolved" "https://registry.npm.taobao.org/@types/json5/download/@types/json5-0.0.29.tgz"
   "version" "0.0.29"
 
-"@types/node@*", "@types/node@^16.11.2":
+"@types/node@*", "@types/node@^16.11.7":
   "integrity" "sha512-QB5D2sqfSjCmTuWcBWyJ+/44bcjO7VbjSbOE0ucoVbAsSNQc4Lt6QkgkVXkTDwkL4z/beecZNDvVX15D4P8Jbw=="
   "resolved" "https://registry.npmmirror.com/@types/node/download/@types/node-16.11.7.tgz"
   "version" "16.11.7"
