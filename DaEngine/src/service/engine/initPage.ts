@@ -24,17 +24,17 @@ var pageStackObjs = {}
 var pageRegObjs = {} // key:pathname
 var pageIndex = 0
 
-const getCurrentPage = function () {
+export const getCurrentPage = function () {
   return currentPage
 }
-const getCurrentPages = function () {
+export const getCurrentPages = function () {
   var pageArr = []
   pageStack.forEach(function (pageObj) {
     pageArr.push(pageObj.page)
   })
   return pageArr
 }
-const pageHolder = function (pageObj) {
+export const pageHolder = function (pageObj) {
   // Page 接口
   if (!__wxRouteBegin) {
     throw utils.error(
@@ -329,26 +329,26 @@ const shareAppMessage = function (params, webviewId) {
   })
 }
 
-const reset = function () {
+export const reset = function () {
   currentPage = undefined
   pageStackObjs = {}
   pageRegObjs = {}
   pageStack = []
   pageIndex = 0
 }
-const setWxConfig = function (e) {
+export const setWxConfig = function (e) {
   __wxConfig__ = e
 }
-const setWxRoute = function (e) {
+export const setWxRoute = function (e) {
   __wxRoute = e
 }
-const setWxRouteBegin = function (e) {
+export const setWxRouteBegin = function (e) {
   __wxRouteBegin = e
 }
-const getWebviewIdToPage = function () {
+export const getWebviewIdToPage = function () {
   return pageStackObjs
 }
-const getRouteToPage = function () {
+export const getRouteToPage = function () {
   return pageRegObjs
 }
 

@@ -1,4 +1,3 @@
-"use strict";
 window.exparser.registerBehavior({
     is: 'wx-input-base',
     properties: {

@@ -1,4 +1,3 @@
-"use strict";
 // wx-label-target
 window.exparser.registerBehavior({
     is: 'wx-label-target',

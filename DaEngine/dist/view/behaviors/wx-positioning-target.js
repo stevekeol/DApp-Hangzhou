@@ -1,4 +1,3 @@
-"use strict";
 var e = 1;
 window.exparser.registerBehavior({
     is: 'wx-positioning-target',

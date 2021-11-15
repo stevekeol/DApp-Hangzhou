@@ -1,3 +1,20 @@
+import './types.d.ts';
+// declare global {
+//   // 可用Partial
+//   interface Window {
+//     // service/amdEngine.ts
+//     require?: Function,
+//     define?: Function,
+//     // service/engine/initApp(initPage)
+//     Page?: Function,
+//     App?: Function,
+//     getApp?: Function,
+//     getCurrentPages?: Function,
+//     // common/reporter.ts
+//     Reporter?: Object // 日志
+//   }
+// }
+// import './common/global';
 import './assets/css/index.css';
 import './common/globalDefined';
 import './common/reporter';

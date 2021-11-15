@@ -17,12 +17,12 @@ interface Imodule {
 /**
  * 在全局对象window上挂载require和define
  */
-declare global {
-  interface Window {
-    require: Function,
-    define: Function
-  }
-}
+// declare global {
+//   interface Window {
+//     require: Function,
+//     define: Function
+//   }
+// }
 
 /**
  * defined: 该模块已经被定义，但尚未导入；

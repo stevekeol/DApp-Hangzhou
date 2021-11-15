@@ -1,27 +1,32 @@
 import utils from '../../common/utils'
-import pageInit from './pageInit'
+import initPage from './initPage'
 import * as reportRealtimeAction from './logReport'
 
-var events = ['onLaunch', 'onShow', 'onHide', 'onUnlaunch']
+import Reporter from '../../common/reporter';
+
+window.Reporter = Reporter; // ts中挂载全局变量的最佳实践是什么？
+
+const events = ['onLaunch', 'onShow', 'onHide', 'onUnlaunch'];
 
 var firstRender = true
 
 var isSysEvent = function (key) {
-  // 判断是否为app 事件
-  for (var index = 0; index < events.length; ++index) {
-    if (events[index] === key) {
-      return true
-    }
-  }
-  return false
+  // // 判断是否为app 事件
+  // for (var index = 0; index < events.length; ++index) {
+  //   if (events[index] === key) {
+  //     return true
+  //   }
+  // }
+  // return false
+  return !~events.indexOf(key) ? true : false;
 }
 var isGetCurrentPage = function (key) {
   return key === 'getCurrentPage'
 }
 
+
 class appClass {
   constructor (appObj) {
-    // t:app
     var self = this
     events.forEach(function (eventKey) {
       // 给app绑定事件
@@ -65,11 +70,11 @@ class appClass {
       bindApp(attrKey)
     }
     this.onError && Reporter.registerErrorListener(this.onError)
-    this.onLaunch()
+    this.onLaunch && this.onLaunch()
     reportRealtimeAction.triggerAnalytics('launch', null, '小程序启动')
     var hide = function () {
       // hide
-      var pages = pageInit.getCurrentPages()
+      var pages = initPage.getCurrentPages()
       pages.length && pages[pages.length - 1].onHide()
       this.onHide()
       reportRealtimeAction.triggerAnalytics('background', null, '小程序转到后台')
@@ -80,7 +85,7 @@ class appClass {
       if (firstRender) {
         firstRender = false
       } else {
-        var pages = pageInit.getCurrentPages()
+        var pages = initPage.getCurrentPages()
         pages.length &&
           (pages[pages.length - 1].onShow(),
             reportRealtimeAction.triggerAnalytics('foreground', null, '小程序转到前台'))
@@ -94,7 +99,7 @@ class appClass {
       '将被废弃',
       'App.getCurrentPage is deprecated, please use getCurrentPages. [It will be removed in 2016.11]'
     )
-    var currentPage = pageInit.getCurrentPage()
+    var currentPage = initPage.getCurrentPage()
     if (currentPage) {
       return currentPage.page
     }
@@ -103,11 +108,11 @@ class appClass {
 
 var tempObj
 
-var appHolder = Reporter.surroundThirdByTryCatch(function (appObj) {
+export const appHolder = Reporter.surroundThirdByTryCatch(function (appObj) {
   tempObj = new appClass(appObj)
 }, 'create app instance')
-var getApp = function () {
+export const getApp = function () {
   return tempObj
 }
 
-export default { appHolder, getApp }
+// export default { appHolder, getApp }

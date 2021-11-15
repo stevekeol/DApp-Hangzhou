@@ -8,6 +8,15 @@
  ****************************************************/
 // import 
 /**
+ * 在全局对象window上挂载require和define
+ */
+// declare global {
+//   interface Window {
+//     require: Function,
+//     define: Function
+//   }
+// }
+/**
  * defined: 该模块已经被定义，但尚未导入；
  * required: 该模块已经被导入内存中（当然是已被定义了）；
  */
@@ -33,6 +42,8 @@ var define = function (path, fun) {
  * @type {[type]}
  */
 var require = function (path) {
+    // 当使用诸如require('config')而非require('config.js')时的兜底处理
+    path = /\.js$/.test(path) ? path : path + ".js";
     var moduleObj = moduleMap.get(path);
     if (!moduleObj)
         throw new Error("module " + path + " is not defined");

@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es5" ,
-    "module": "es6" ,
-    "esModuleInterop": true ,
-    "forceConsistentCasingInFileNames": true ,
-    "strict": true ,
+    "target": "es5",
+    "module": "es6",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    // "strict": true ,
     "skipLibCheck": true,
     "lib": ["es6", "dom", "dom.iterable"],
+    "types": ["node"],
     "experimentalDecorators": true,
     // "rootDir": "./src",
     "outDir": "./dist",

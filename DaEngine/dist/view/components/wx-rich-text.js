@@ -1,4 +1,3 @@
-"use strict";
 var textParser = (function () {
     var parserCreator = (function () {
         var creator = function () { };

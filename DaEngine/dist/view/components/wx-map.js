@@ -1,4 +1,3 @@
-"use strict";
 // add map sdk
 // export default  !(function () {
 //     window.addEventListener('DOMContentLoaded', function () {

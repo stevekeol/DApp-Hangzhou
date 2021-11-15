@@ -1,4 +1,3 @@
-"use strict";
 // 转发 window 上的 animation 和 transition 相关的动画事件到 exparser
 ;
 (function (win) {

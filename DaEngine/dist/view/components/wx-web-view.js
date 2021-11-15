@@ -1,4 +1,3 @@
-"use strict";
 // let e = !1
 window.exparser.registerElement({
     is: 'wx-web-view',

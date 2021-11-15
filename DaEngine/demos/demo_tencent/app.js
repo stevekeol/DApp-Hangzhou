@@ -5,9 +5,8 @@ App({
     console.log('App Launch')
     var getItLatter = function () {
       return new Promise((resolve, reject) => {
-        console.log(55555)
         setTimeout(() => {
-          resolve(6666)
+          resolve('I am stevekeol')
         }, 2000)
       })
     }
