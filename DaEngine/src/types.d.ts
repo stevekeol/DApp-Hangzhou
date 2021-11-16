@@ -44,3 +44,24 @@ declare global {
     __wxRouteBegin?: any
   }
 }
+
+  // interface Window {
+  //   // service/amdEngine.ts
+  //   require?: Function,
+  //   define?: Function,
+
+  //   // service/engine/initApp(initPage)
+  //   Page?: Function,
+  //   App?: Function,
+  //   getApp?: Function,
+  //   getCurrentPages?: Function,
+
+  //   // common/reporter.ts
+  //   Reporter?: Object, // 日志
+
+  //   // ！！！
+  //   wx?: any
+  //   __wxRoute?: any,
+  //   __wxConfig__?: any,
+  //   __wxRouteBegin?: any
+  // }

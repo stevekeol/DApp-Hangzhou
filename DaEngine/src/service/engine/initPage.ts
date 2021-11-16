@@ -6,6 +6,7 @@ import { triggerAnalytics } from './logReport'
 var pageStack = []
 var tabBars = [] // tab栏url列表
 var currentPage
+
 __wxConfig__.tabBar &&
   __wxConfig__.tabBar.list &&
   typeof __wxConfig__.tabBar.list === 'object' &&
@@ -395,3 +396,8 @@ export default {
   getCurrentPages,
   getCurrentPage
 }
+
+
+//----------------------------------------------------------
+
+
