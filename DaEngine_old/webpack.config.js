@@ -68,7 +68,7 @@ module.exports = {
   // mode: 'development',
   mode: 'production',
   entry: {
-    DaEngine: getSourcePath('index.ts')
+    DaEngine: getSourcePath('index.js')
   },
   output: {
     filename: '[name].js',

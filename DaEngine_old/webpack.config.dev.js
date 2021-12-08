@@ -52,7 +52,7 @@ function getSourcePath (rPath) {
 
 module.exports = {
   entry: {
-    DaEngine: getSourcePath('index.ts')
+    DaEngine: getSourcePath('index.js')
   },
   output: {
     filename: '[name].js',

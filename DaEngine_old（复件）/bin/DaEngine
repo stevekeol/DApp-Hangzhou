@@ -1,0 +1,377 @@
+#!/usr/bin/env node
+const startTime = new Date()
+const loadConfig = require('../lib/config')
+const os = require('os')
+const childProcess = require('child_process')
+const pify = require('pify')
+const exec = pify(childProcess.exec)
+const program = require('commander')
+const json = require('../package.json')
+const UpdateNotifier = require('update-notifier').UpdateNotifier
+const open = require('open')
+const fs = require('fs-extra')
+const has = require('has-value')
+const chalk = require('chalk')
+const net = require('net')
+const boxen = require('boxen')
+const isWin = /^win/.test(process.platform)
+const path = require('path')
+const semCmp = require('semver-compare')
+const util = require('../lib/util')
+// const Parallel = require('node-parallel')
+// const notify = require('node-notifier')
+let cmdRm, cmdCp, cmdCpArg
+if (isWin) {
+  cmdRm = 'rmdir /s /q '
+  cmdCp = 'xcopy '
+  cmdCpArg = ' /y /d /s'
+} else {
+  cmdRm = 'rm -rf '
+  cmdCp = 'cp -rf '
+  cmdCpArg = ''
+}
+
+program
+  .version(json.version)
+  .usage('[options] <appRoot>')
+  .option('-b, --babel', '对DApp源码采用babel转换')
+  .option('-d, --dist <p>', '指定生成的路径')
+  .option('-l, --list', '使用默认浏览器打开更新历史')
+  .option('-n, --nocheck', '不检查更新')
+  .option('-o, --open', '使用 Chrome 打开DApp，仅对 Mac 有效')
+  .option('-p, --port <n>', '指定服务端口，默认 3000', parseInt)
+  .option('-t, --transform', '只转换DApp,不起web服务')
+
+program.parse(process.argv)
+
+const printLog = function(msg, allow) {
+  if (!program.transform || allow) {
+    console.log(msg)
+  }
+}
+
+// 更新检查方法
+const notifier = new UpdateNotifier({
+  pkg: json,
+  callback: function(err, result) {
+    if (err) return
+    if (semCmp(result.latest, result.current) > 0) {
+      const message =
+        'Update available ' +
+        chalk.dim(result.current) +
+        chalk.reset(' → ') +
+        chalk.green(result.latest) +
+        ' \nRun ' +
+        chalk.cyan('npm i -g ' + json.name) +
+        ' to update'
+      const msg =
+        '\n' +
+        boxen(message, {
+          padding: 1,
+          margin: 1,
+          align: 'center',
+          borderColor: 'yellow',
+          borderStyle: 'round'
+        })
+      printLog(msg)
+    }
+  }
+})
+
+// // 打开更新历史
+// if (program.list) {
+//   open('https://github.com/stevekeol/DaEngine/releases')
+//   process.exit()
+// }
+
+let tmpFolderName
+let curPath = process.cwd()
+
+// 校验项目文件（指定的文件是否存在，并进入对应项目的目录作为工作目录）
+function checkProject() {
+  let folder = program.args[0]
+  if (folder) {
+    let stats
+    try {
+      stats = fs.statSync(folder)
+    } catch (e) {}
+    if (!stats) {
+      printLog('指定目录不存在或者不是目录，请检查')
+      process.exit()
+    } else if (stats.isFile()) {
+      // 压缩项目包的解压
+      if (folder.match(/\.zip$/i)) {
+        tmpFolderName =
+          '/tmp/__weapp' +
+          Math.random()
+            .toString(16)
+            .substr(2) +
+          new Date().getTime()
+        childProcess.execSync(`unzip ${folder} -d ${tmpFolderName}`)
+        printLog(folder)
+
+        folder = childProcess
+          .execSync(`find ${tmpFolderName} -name app.json -print`)
+          .toString()
+          .replace(/^\s+|(app\.json\s*$)/, '')
+        let tmpMatchValue = folder.match(/(^.*)\n/)
+        if (tmpMatchValue) {
+          folder = tmpMatchValue[1].replace(/app\.json\s*$/, '')
+        }
+      } else {
+        printLog('指定目录不存在或者不是目录，请检查')
+        process.exit()
+      }
+    } else if (!stats.isDirectory) {
+      printLog('指定目录不存在或者不是目录，请检查')
+      process.exit()
+    }
+    // let chdirFail = false
+    try {
+      process.chdir(folder)
+    } catch (err) {
+      // chdirFail = true
+      printLog('切换目录失败: ' + err)
+    }
+  }
+  if (!fs.existsSync('./app.json')) {
+    printLog(chalk.red('无法找到 app.json 文件，请检查'))
+    process.exit()
+  }
+}
+
+// 开始转换代码
+let distPath = path.resolve(curPath, program.dist || './DaEngineTemp/dist')
+
+/**
+ *   记录构建时间
+ */
+function printRunTime() {
+  const endTime = new Date()
+  console.log(
+    chalk.yellow(
+      `Build Complete. Time elapsed: ${(endTime - startTime) / 1000}s`
+    )
+  )
+}
+
+/**
+ * 启动服务器
+ *
+ */
+function bootWebServer() {
+  // 此处是利用koa开启本地服务器，那么在移动端怎么办？（开发模式：其实自然就有http-server；产品模式：已经是内存中一个纯粹的文件夹形式。SO？？？）
+  // 其实移动端不必过分考虑，因为此时已经不再是开发模式，仅仅是产品模式。
+  let server = require('../lib/server')(distPath)
+  // 该端口号：懂的都懂
+  let startPort = 9527
+
+  getPort(function(port) {
+    // Macbook Platform
+    if (os.platform() === 'darwin' && program.open) {
+      exec('osascript chrome.scpt ' + port, { cwd: __dirname }, function() {})
+    }
+    server.listen(port, function() {
+      const openMsg = `Opening it on: http://localhost:${port}`
+      let msg =
+        '\n' +
+        boxen(openMsg, {
+          padding: 1,
+          margin: 1,
+          align: 'center',
+          borderColor: 'yellow',
+          borderStyle: 'round'
+        })
+      printRunTime()
+      printLog(msg)
+      if (program.open) open('http://localhost:' + port)
+    })
+  })
+
+  function getPort(cb) {
+    if (program.port) return cb(program.port)
+    let port = startPort
+
+    let server = net.createServer()
+    server.listen(port, function() {
+      server.once('close', function() {
+        cb(port)
+      })
+      server.close()
+    })
+    server.on('error', function() {
+      startPort += 1
+      getPort(cb)
+    })
+  }
+}
+
+/**
+ * 构建 小程序
+ * 创建临时文件夹，将业务代码获取后集成进入模板代码中，并将所有页面各自编译成一个js文件
+ * （这些可以在开启本地http server的chrome中的Sources中查看各个文件的构成和内容）
+ */
+function build() {
+  let execBuild = async function(err, out) {
+    // printLog(out)
+    err && printLog(err)
+    util.mkdirsSync(distPath)
+    printLog('文件将生成到:\n' + distPath)
+    // doTransformFile()
+    const assetsPath = path.resolve(__dirname, '../lib/template/assets')
+
+    // 强制复制模板中所有的assets及最终html应用的空模板到工作路径下(distPath)
+    await exec(
+      cmdCp +
+        JSON.stringify(assetsPath) +
+        (isWin ? ' ' : '/* ') +
+        distPath +
+        cmdCpArg
+    )
+
+    // 复制模板中符合要求的文件（.git和node_modules文件夹？？？，extname后缀的所有文件）
+    await util.copy('./', distPath, {
+      exclude: {
+        basename: ['.git', 'node_modules'],
+        extname: ['.js', '.json', '.wxss', '.css', '.git', '.md', '.wxml']
+      }
+    })
+
+    // 加载一些默认配置
+    const appConfig = await loadConfig({ babel: program.babel })
+
+    let core = require('../lib/core')
+
+    // 获取index.html（空白模板填充后）的内容并写入工作目录中的index.html中
+    // 疑问：仍旧是空白index.html，还是pages[0]填充后的
+    await core.getIndex().then(content =>
+      /*
+           if(program.transform){
+           content = content.replace('let __wxConfig__ = {"DaEngine":{','let __wxConfig__ = {"DaEngine":{ "requestProxy":"/remoteProxy",')
+           }
+           */
+      util.createFilePromise(distPath, 'index.html', content, program.transform)
+    )
+
+    // 获取所有JS代码（其实是dapp项目中各个页面的js文件，而非runtime的）
+    await core
+      .getServiceJs()
+      .then(content =>
+        util.createFilePromise(
+          distPath + '/script',
+          'app-service.js',
+          content,
+          program.transform
+        )
+      )
+
+    // 获取app.wxss文件内容
+    await core
+      .getAppWxss('./app')
+      .then(content =>
+        util.createFilePromise(
+          distPath + '/css',
+          'app.css',
+          content.replace(/\/\*#\s*sourceMappingURL=.*\*\/$/, ''),
+          program.transform
+        )
+      )
+
+    let tabBar = appConfig.tabBar
+    let pages = appConfig.pages
+    let count = 0
+
+    // 将每个页面合成一个js文件（html,css,js等）
+    await Promise.all(
+      pages.map(async function(path) {
+        let fullpath = path.replace(/^(\/|\.\/)/, '') // fullpath即包含了文件名
+        let paths = fullpath.split('/')
+        let file = paths.pop() // 根据path取出文件名
+        path = paths.join('/') // 根据path取出路径(除去文件名后的真实路径)
+
+        const arr = await core.getPage(fullpath)
+
+        // page generateFunc
+        let content = arr[0][0] // .replace(/(src=[\"\']?)\/+/,"$1");//对以/开始的路径做处理
+        if (arr[1]) {
+          arr[1] = arr[1]
+            .replace(/\/\*#\s*sourceMappingURL=.*\*\/$/, '')
+            .replace(/(position:\s*fixed\s*[^}]*[^w]top:)\s*0\s*;/g, '$142px;')
+          if (
+            has(tabBar, 'list') &&
+            tabBar.list.findIndex(
+              item => item.pagePath.replace(/^(\/|\.\/)/, '') === fullpath
+            ) !== -1
+          ) {
+            if (tabBar.position !== 'top') {
+              arr[1] = arr[1].replace(
+                /(position:\s*fixed\s*[^}]*[^w]bottom:)\s*0\s*;/g,
+                '$156px;'
+              )
+            }
+          }
+        } else {
+          arr[1] = ''
+        }
+        // @code-separator-line: 是什么？（其实就是代码分隔行，但是在后面的哪儿被替换的呢？）
+        content += '@code-separator-line:' + arr[1] // page css
+        if (!arr[2]) arr[2] = ''
+        content += '@code-separator-line:' + arr[2] // app-service
+        content += '@code-separator-line:' + JSON.stringify(arr[0][1]) // tags
+        return util
+          .createFilePromise(
+            distPath + '/src/' + path,
+            file + '.js',
+            content,
+            program.transform
+          )
+          .catch(err => console.error(err))
+      })
+    )
+
+    if (program.transform) {
+      printRunTime()
+      printLog('ok:' + distPath, true)
+
+      if (tmpFolderName) {
+        await exec(`${cmdRm}${tmpFolderName}`)
+      }
+      util.rmEmptyDirsSync(distPath)
+      process.exit(0)
+    } else {
+      // 启动web服务器
+      bootWebServer()
+      // 删除上述所有流程中，用于文件生成的临时文件夹
+      util.rmEmptyDirsSync(distPath)
+    }
+
+    // printRunTime()
+    // console.log('b',program.babel)
+  }
+  if (fs.existsSync(distPath)) {
+    // 为何要删掉？
+    exec(cmdRm + JSON.stringify(distPath)).then(execBuild)
+  } else {
+    execBuild()
+  }
+}
+
+process.on('uncaughtException', function(e) {
+  printLog(chalk.red('发生了未知错误'))
+  console.error(e.stack)
+})
+
+process.on('unhandledRejection', (reason, p) => {
+  console.log('Unhandled Rejection at:', p, 'reason:', reason)
+  // application specific logging, throwing an error, or other logic here
+})
+
+// 执行更新检查
+if (!program.nocheck) {
+  notifier.check()
+}
+
+// 检查项目目录（并进入该项目目录作为nodejs进程的当前工作目录）
+checkProject()
+// 开始构建
+build()

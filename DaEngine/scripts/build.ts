@@ -20,7 +20,7 @@ async function build() {
   await esbuild({
     entryPoints,
     platform: 'node',
-    minify: true,
+    minify: false,
     sourcemap: true,
     format: 'cjs',
     tsconfig: 'tsconfig.json',

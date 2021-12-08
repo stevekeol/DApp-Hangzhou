@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/DaEngine.min.css">
+  <meta name="viewport" content="width=device-width, height=device-height,user-scalable=no, initial-scale=1.0" />
+</head>
+<body>
+  <div class="head">
+    <div class="jshook-ws-head" style="display: none">
+      <div class="head-back jshook-ws-head-back">
+          <!-- 带有i标签的都是可以跳转的潜力的 -->
+          <i class="head-back-icon"></i>
+        <span class="jshook-ws-head-back-text"></span>
+      </div>
+      <div class="head-home jshook-ws-head-home">
+        <i class="head-home-icon"></i>
+      </div>
+      <h3 class="head-title jshook-ws-head-title">
+        <i class="head-title-loading"></i>
+        <span></span>
+      </h3>
+      <!-- option不能直接跳转，因为需要进一步选择 -->
+      <div class="head-option jshook-ws-head-option">
+      </div>
+    </div>
+  </div>
+  <!-- 这个标签的作用是？ -->
+  <div class="scrollable"></div>
+  <div class="tabbar-root {{if _.topBar}}tabbar-root-top{{/}}">
+    {{if _.tabbarList && _.tabbarList.length}}
+    <!-- 第一阶段可以先省略tabbar的实现？？？ -->
+    <div class="tabbar jshook-ws-tabbar" style="display:none;{{= _.tabStyle}}">
+      {{each _.tabbarList as item, idx}}
+      <div class="tabbar-item jshook-ws-tabbar-item" key="{{= idx}}">
+        {{if !_.topBar}}
+        <img class="tabbar-icon" src="{{= item.iconPath||''}}" icon="{{= item.iconPath||''}}" select-icon="{{= item.selectedIconPath||''}}" alt="" />
+        {{/}}
+        <p class="tabbar-label" style="color:{{= _.tabLabelColor || '#7A7E83'}}">
+        {{= item.text||''}}
+        {{if _.topBar}}
+        <i class="tabbar-label-indicator" style="display: none; color:{{= _.tabLabelSelectedColor || '#3cc51f'}}"></i>
+        {{/}}
+        </p>
+      </div>
+      {{/}}
+    </div>
+    {{/}}
+  </div>
+  <script>
+    // 诸如 config,root,topBar,tabbarList等变量，是在lib/router.js中的rootFn()赋值的
+    var __wxConfig__ = {{! _.config}}
+    var __root__ = '{{= _.root}}'
+  </script>
+  <script>
+    var __wxRoute
+    var __wxRouteBegin
+    global = {}
+  </script>
+
+  <!-- DaEngine.js是webpack.config.js中指定生成的，内容是src/index.js的内容 -->
+  <script src="script/DaEngine.js?v={{= _.version}}" type="text/javascript"></script>
+  <!-- 要先引入DaEngine.js作为运行时，才能引入app-service.js，后者中的require等需要运行时的支撑 -->
+  <script src="script/app-service.js?v={{= _.version}}"></script>
+  <script>
+    ServiceJSBridge.doCommand({
+      sdkName: 'onLaunch'
+    })
+  </script>
+</body>
+</html>
