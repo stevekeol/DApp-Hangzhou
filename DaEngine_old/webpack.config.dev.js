@@ -1,5 +1,5 @@
 /*
- * 直接打包至 wewbTmp 目录，调试用
+ * 直接打包至 DaEngineTmp 目录，调试用
  */
 const webpack = require('webpack')
 const path = require('path')
